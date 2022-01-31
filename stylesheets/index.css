@@ -1,0 +1,6 @@
+/* all the css imports */
+
+@import "./documentation.css";
+@import "./colors.css";
+@import "./reset.css";
+@import "./typography.css"
