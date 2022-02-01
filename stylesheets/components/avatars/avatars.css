@@ -1,20 +1,20 @@
 @import "/stylesheets/index.css";
 
 .avatar-sm {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }
 
 .avatar-md {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
 .avatar-lg {
-    width: 70px;
-    height: 70px;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
 }
 
@@ -24,15 +24,15 @@
 }
 
 .sized-avatars{
-    background: #f8ebe7;
+    background: var(--sized-avatars-section)
 }
 
 .squared-avatars{
-    background: #dfd9cd;
+    background: var(--squared-avatars-section);
 }
 
 .bordered-avatars{
-    background: #f0d7c4;
+    background: var(--bordered-avatars-section);
 }
 
 .border-red{
