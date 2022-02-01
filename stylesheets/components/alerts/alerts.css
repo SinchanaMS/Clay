@@ -1,0 +1,92 @@
+@import "/stylesheets/index.css";
+
+.general-alerts{
+    margin-bottom: 0;
+}
+
+.simple-alerts {
+    background: var(--simple-alerts-section);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.alerts-simple {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.alerts {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+.success-alert {
+    background: var(--success-color);
+    color: var(--success-text);
+}
+
+.warning-alert {
+    background: var(--warning-color);
+    color: var(--warning-text);
+}
+
+.danger-alert {
+    background: var(--error-color);
+    color: var(--error-text);
+}
+
+.primary-alert-link {
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+.secondary-alert-link {
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.alerts-with-icons {
+    background: var(--alerts-with-icons-section);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.alert-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.icon-alerts {
+    outline: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto 1rem;
+}
+
+.icon-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.close-btn{
+    display: flex;
+    background: none;
+    border: none
+}
+
+.close-btn:hover{
+    outline: 1px solid var(--warning-text);
+    border-radius: 50%;
+    cursor: pointer;
+}

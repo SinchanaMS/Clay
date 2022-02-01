@@ -1,3 +1,4 @@
+
 .documentation-section {
     margin: 0 auto;
     font-family: Roboto, sans-sarif;
@@ -11,9 +12,7 @@
     padding: 1rem;
     background: url(/assets/clay.jpg);
     background-size: cover;
-    text-align: center;
     font-family: 'Andika New Basic', sans-serif;
-    font-size: 125%;
 }
 
 .header-title{
@@ -40,13 +39,35 @@
     text-decoration: none;
     color: black
 }
-.content-section {
+.content {
+    /* outline: 1px solid; */
     position: relative;
-    top: 7rem;
+    top: 6rem;
     left: 8rem;
     width: 76%;
     margin: auto;
     padding: 1rem;
 }
 
+.description{
+    margin: 2rem;
+}
 
+
+.component-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.component-showcase{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem
+}
