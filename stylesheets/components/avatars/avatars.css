@@ -1,0 +1,48 @@
+@import "/stylesheets/index.css";
+
+.avatar-sm {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.avatar-md {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.avatar-lg {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+.squared{
+    border-radius: 2px;
+
+}
+
+.sized-avatars{
+    background: var(--sized-avatars-section)
+}
+
+.squared-avatars{
+    background: var(--squared-avatars-section);
+}
+
+.bordered-avatars{
+    background: var(--bordered-avatars-section);
+}
+
+.border-red{
+    outline: 5px solid var(--border-red)
+}
+
+.border-green{
+    outline: 5px solid var(--border-green)
+}
+
+.border-grey{
+    outline: 5px solid var(--border-grey)
+}
