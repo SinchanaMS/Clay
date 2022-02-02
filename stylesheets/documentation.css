@@ -39,7 +39,6 @@
     color: black
 }
 .content {
-    /* outline: 1px solid; */
     position: relative;
     top: 6rem;
     left: 8rem;
@@ -52,7 +51,6 @@
     margin: 2rem;
 }
 
-
 .component-wrapper{
     display: flex;
     flex-direction: column;
@@ -63,8 +61,7 @@
 
 .component-showcase{
     display: flex;
-    /* outline: 1px solid; */
-    width: 50%;
+    width: 60%;
     justify-content: center;
     gap: 2rem;
     align-items: center;
