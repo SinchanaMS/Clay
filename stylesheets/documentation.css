@@ -1,4 +1,3 @@
-
 .documentation-section {
     margin: 0 auto;
     font-family: Roboto, sans-sarif;
@@ -64,7 +63,8 @@
 
 .component-showcase{
     display: flex;
-    width: 60%;
+    /* outline: 1px solid; */
+    width: 50%;
     justify-content: center;
     gap: 2rem;
     align-items: center;
