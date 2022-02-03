@@ -12,10 +12,6 @@
     --warning-text:#3f2902 ;
     --error-text: #742409;
 
-    
-    --green-badge:#6ab91b ;
-    --red-badge: #af2b21;
-    --grey-badge: #969494;
 
     --border-red: #b10e0e;
     --border-green: #5da516;
@@ -26,7 +22,20 @@
     --squared-avatars-section: #dfd9cd;
     --bordered-avatars-section: #f0d7c4;
 
+
     --simple-alerts-section: #f3eded;
     --alerts-with-icons-section: #ebe7df;
+
+
+    --badges-on-icons-section: #f0e7dc;
+    --badges-on-avatars-section: #f3d6d4;
+    --badge-default-bg: #af2b21;
+    --badge-default-text: white;
+    --badge-border-default: white;
+
+        
+    --green-badge:#6ab91b ;
+    --red-badge: #af2b21;
+    --grey-badge: #969494;
 }
 
