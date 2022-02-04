@@ -1,18 +1,5 @@
 @import "/stylesheets/index.css";
 
-.simple-alerts {
-    background: var(--simple-alerts-section);
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.alerts-simple {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
-}
-
 .alerts {
     width: 100%;
     margin: 0.5rem;
@@ -43,20 +30,6 @@
 .secondary-alert-link {
     background: var(--secondary-color);
     color: var(--secondary-text);
-}
-
-.alerts-with-icons {
-    background: var(--alerts-with-icons-section);
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
-}
-
-.alert-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0px;
 }
 
 .icon-alerts {
