@@ -70,6 +70,49 @@
     padding: 1rem
 }
 
+/* Avatars Section */
+.sized-avatars{
+    background: var(--sized-avatars-section)
+}
+
+.squared-avatars{
+    background: var(--squared-avatars-section);
+}
+
+.bordered-avatars{
+    background: var(--bordered-avatars-section);
+}
+
+/* Alerts Section */
+.simple-alerts {
+    background: var(--simple-alerts-section);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.alerts-simple {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.alerts-with-icons {
+    background: var(--alerts-with-icons-section);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+}
+
+.alert-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+/* Badges Section */
 .badges-on-icons {
     background: var(--badges-on-icons-section);
 }
@@ -78,13 +121,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}   
+}
 
 .badges-on-avatars {
     background: var(--badges-on-avatars-section);
 }
 
-.avatar-with-badge{
+.avatar-with-badge {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;

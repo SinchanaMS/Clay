@@ -18,31 +18,18 @@
     border-radius: 50%;
 }
 
-.squared{
+.squared {
     border-radius: 2px;
-
 }
 
-.sized-avatars{
-    background: var(--sized-avatars-section)
-}
-
-.squared-avatars{
-    background: var(--squared-avatars-section);
-}
-
-.bordered-avatars{
-    background: var(--bordered-avatars-section);
-}
-
-.border-red{
+.border-red {
     outline: 5px solid var(--border-red)
 }
 
-.border-green{
+.border-green {
     outline: 5px solid var(--border-green)
 }
 
-.border-grey{
+.border-grey {
     outline: 5px solid var(--border-grey)
 }
