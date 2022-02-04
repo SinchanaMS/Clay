@@ -14,7 +14,7 @@
     font-family: 'Andika New Basic', sans-serif;
 }
 
-.header-title{
+.header-title {
     margin-left: 1rem;
 }
 
@@ -34,10 +34,11 @@
     font-size: 165%;
 }
 
-.nav-subtitles{
+.nav-subtitles {
     text-decoration: none;
     color: black
 }
+
 .content {
     position: relative;
     top: 6rem;
@@ -47,19 +48,18 @@
     padding: 1rem;
 }
 
-.description{
+.description {
     margin: 2rem;
 }
 
-.component-wrapper{
+.component-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 1rem;
 }
 
-.component-showcase{
+.component-showcase {
     display: flex;
     width: 60%;
     justify-content: center;
