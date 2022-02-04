@@ -1,9 +1,5 @@
 @import "/stylesheets/index.css";
 
-.general-alerts{
-    margin-bottom: 0;
-}
-
 .simple-alerts {
     background: var(--simple-alerts-section);
     padding: 1rem;
@@ -23,7 +19,6 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
-
 
 .success-alert {
     background: var(--success-color);
@@ -57,7 +52,7 @@
     border-radius: 1rem;
 }
 
-.alert-icons{
+.alert-icons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,20 +67,20 @@
     padding: auto 1rem;
 }
 
-.icon-text{
+.icon-text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
 
-.close-btn{
+.close-btn {
     display: flex;
     background: none;
     border: none
 }
 
-.close-btn:hover{
+.close-btn:hover {
     outline: 1px solid var(--warning-text);
     border-radius: 50%;
     cursor: pointer;

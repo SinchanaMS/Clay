@@ -2,28 +2,14 @@
 @import "/stylesheets/components/avatars/avatars.css";
 
 
-.general-badges {
-    margin-bottom: 0;
-}
-
-.badges-on-icons {
-    background: var(--badges-on-icons-section);
-}
-
-.icon-with-badge {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.badge-icon-showcase {
+.badge-icon-container {
     position: relative;
 }
 
 .badge {
     background: var(--badge-default-bg);
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
     color: var(--badge-default-text);
     text-align: center;
@@ -32,52 +18,43 @@
     right: -6px;
 }
 
-.icon-badge{
+.badge-text {
     font-size: small;
-    padding: 1px;
-}
-.badges-on-avatars {
-    background: var(--badges-on-avatars-section);
+    padding: 3px;
 }
 
-.avatar-with-badge{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-}
-
-.avatar-badge{
+.avatar-badge-container {
     display: flex;
     position: relative;
 }
 
-.av-badge{
+.av-badge {
     right: 1px;
     border: 2px solid var(--badge-border-default);
 }
-.av-sm-badge{
+
+.av-sm-badge {
     height: 10px;
     width: 10px;
-    top: 1.4rem;  
+    top: 1.4rem;
 }
 
-.av-md-badge{
+.av-md-badge {
     height: 1rem;
     width: 1rem;
     top: 2.1rem;
 }
 
-.av-lg-badge{
+.av-lg-badge {
     height: 1.25rem;
     width: 1.25rem;
     top: 3.25rem;
 }
 
-.grey-badge{
+.grey-badge {
     background: var(--grey-badge);
 }
 
 .green-badge {
     background: var(--green-badge);
 }
-
