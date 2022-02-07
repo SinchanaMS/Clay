@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="/stylesheets/components/images/images.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <h1 class="header-title">Clay</h1>
+        </header>
+        <nav class="nav-bar">
+            <h1 class="nav-title">Components</h1>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+        </nav>
+
+        <section class="content avatar-section">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Images</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    These components are used to display images on websites. They can be made responsive and come in
+                    different shapes and sizes as shown below.
+                </div>
+            </div>
+
+            <div class="component-wrapper responsive-images-wrapper">
+                <h1 class="wrapper-heading">Responsive Images</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Images can be made responsive - they expand upto the width of the container they are in. Use the
+                    class "img-responsive" in the parent container. There are two variants - circular and squared. Use
+                    classes "round-img" or "squared-img" as per requirement.
+                </div>
+
+                <div class="component-showcase-col">
+                    <div class="img-responsive round-img">
+                        <img src="https://images.unsplash.com/photo-1561018442-331b4bb0c710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                            alt="responsive image - circular">
+                    </div>
+
+                    <div class="img-responsive squared-img">
+                        <img src="https://images.unsplash.com/photo-1534330207526-8e81f10ec6fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="responsive image - squared">
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper squared-images-wrapper">
+                <h1 class="wrapper-heading">Squared Images</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Images can be square-shaped using class "sq-img" in your HTML code. Use the classes "small",
+                    "medium" and "large" for the preferred sizes.
+                </div>
+                <div class="component-showcase sq-img-showcase">
+                    <img src="https://images.unsplash.com/photo-1637152630314-9e73782b9cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="" class="sq-img small">
+                    <img src="https://images.unsplash.com/photo-1642425961085-43765c1ec217?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="" class="sq-img medium">
+                    <img src="https://images.unsplash.com/photo-1501660034796-9860da6cb741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxvcmFuZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="sq-img large">
+                </div>
+            </div>
+
+            <div class="component-wrapper rd-img-wrapper">
+                <h1 class="wrapper-heading">Circular Images</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Images can be circular-shaped. Use class "img-round" along with the preferred sizes - "small",
+                    "medium" or "large".
+                </div>
+                <div class="component-showcase rd-img-showcase">
+                    <img src="https://images.unsplash.com/photo-1532191343016-47bf741b8b3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                        alt="small avatar" class="img-round small">
+                    <img src="https://images.unsplash.com/photo-1465403843003-b277b46a1120?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="medium avatar" class="img-round medium">
+                    <img src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="large avatar" class="img-round large">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
