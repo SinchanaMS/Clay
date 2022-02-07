@@ -143,13 +143,13 @@
 
 /* Images */
 .responsive-images-wrapper {
-    background: #e8deda;
+    background: var(--res-img-section);
 }
 
 .squared-images-wrapper {
-    background: #e6d3cd;
+    background: var(--sq-img-section);
 }
 
 .rd-img-wrapper {
-    background: #ddd8a9
+    background: var(--rd-img-section)
 }
