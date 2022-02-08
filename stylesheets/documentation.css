@@ -67,19 +67,26 @@
     gap: 2rem;
     align-items: center;
     margin: 1rem auto;
-    padding: 1rem
+    padding: 1rem;
+}
+
+.component-showcase-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
 }
 
 /* Avatars Section */
-.sized-avatars{
+.sized-avatars {
     background: var(--sized-avatars-section)
 }
 
-.squared-avatars{
+.squared-avatars {
     background: var(--squared-avatars-section);
 }
 
-.bordered-avatars{
+.bordered-avatars {
     background: var(--bordered-avatars-section);
 }
 
@@ -132,4 +139,42 @@
     justify-content: space-evenly;
     padding: 1rem;
     outline: 1px solid;
+}
+
+/* Buttons */
+.btns-wrapper{
+    background:var(--btns-section) ;
+}
+.pri-btns-wrapper {
+    background: var(--pri-btns-section);
+}
+
+.sec-btns-wrapper{
+    background: var(--sec-btns-section); 
+}
+
+.link-buttons-wrapper {
+    background: var( --link-buttons-section)
+}
+
+.icon-buttons-wrapper {
+    background: var(--icon-buttons-section)
+}
+
+.fab-wrapper {
+    background: var(--fab-section)
+}
+
+
+/* Images */
+.responsive-images-wrapper {
+    background: var(--res-img-section);
+}
+
+.squared-images-wrapper {
+    background: var(--sq-img-section);
+}
+
+.rd-img-wrapper {
+    background: var(--rd-img-section)
 }

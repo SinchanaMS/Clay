@@ -1,41 +1,62 @@
 :root{
-    --primary-color: #c07961;
-    --secondary-color: #dacbc6;
+    --primary-color: #743017;
+    --secondary-color: #cea7a4;
     --success-color: #cdddc7;
     --warning-color: #e9e2b0;
     --error-color: #ebccc3;
 
-
     --primary-text: #f5efed;
-    --secondary-text:#692006 ;
+    --secondary-text:#000000 ;
     --success-text:#043828 ;
     --warning-text:#3f2902 ;
     --error-text: #742409;
 
+    --primary-hover:#8d482f;
+    --primary-disabled: #ceafa4;
 
-    --border-red: #b10e0e;
-    --border-green: #5da516;
-    --border-grey: #797878;
+    --secondary-hover: #bd9390;
+    --secondary-disabled: #d3bebc;
+    --secondary-disabled-text: #9b9494;
 
+    --default-red: #af2b21;
+    --default-green: #6ab91b;
+    --default-grey: #969494;
 
     --sized-avatars-section: #f8ebe7;
     --squared-avatars-section: #dfd9cd;
     --bordered-avatars-section: #f0d7c4;
 
-
     --simple-alerts-section: #f3eded;
     --alerts-with-icons-section: #ebe7df;
-
 
     --badges-on-icons-section: #f0e7dc;
     --badges-on-avatars-section: #f3d6d4;
     --badge-default-bg: #af2b21;
-    --badge-default-text: white;
-    --badge-border-default: white;
+    --badge-default-text: #ffffff;
+    --badge-border-default: #ffffff;
+   
+    --btns-section: #f0eee9 ;
+    --pri-btns-section: #f3eae0;
+    --sec-btns-section: #f0ece9;
+    --link-buttons-section: #f3f0f0;
+    --icon-buttons-section: #f0eee9;
+    --fab-section: #f8ece0;
 
-        
-    --green-badge:#6ab91b ;
-    --red-badge: #af2b21;
-    --grey-badge: #969494;
+    --btn-light: #ece5e0;
+    --btn-light-hover: #d4ceca;
+    --btn-light-border: #9a9e9a;
+    --btn-outline-hover: #f7f4f4;
+    --btn-border-bottom: #e0dbdb;
+    --btn-border-bottom-hover: #cfcccc;
+    --btn-dark: #4f5458;
+    --btn-dark-text: #f1e9e9;
+    --btn-dark-hover: #404346;
+    
+    --shadow-before: #ccc7bd;
+    --shadow-hover: #ada697;
+
+    --res-img-section: #e8deda;
+    --sq-img-section: #e6d3cd;
+    --rd-img-section: #ddd8a9;
 }
 
