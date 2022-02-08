@@ -141,6 +141,31 @@
     outline: 1px solid;
 }
 
+/* Buttons */
+.btns-wrapper{
+    background:var(--btns-section) ;
+}
+.pri-btns-wrapper {
+    background: var(--pri-btns-section);
+}
+
+.sec-btns-wrapper{
+    background: var(--sec-btns-section); 
+}
+
+.link-buttons-wrapper {
+    background: var( --link-buttons-section)
+}
+
+.icon-buttons-wrapper {
+    background: var(--icon-buttons-section)
+}
+
+.fab-wrapper {
+    background: var(--fab-section)
+}
+
+
 /* Images */
 .responsive-images-wrapper {
     background: var(--res-img-section);
