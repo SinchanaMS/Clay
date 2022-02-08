@@ -1,0 +1,171 @@
+@import "/stylesheets/index.css";
+
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+.rounded-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.curved-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+}
+
+.pri-btn {
+    border: none;
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+.pri-btn-hover {
+    border: none;
+    background: var(--primary-hover);
+    color: var(--primary-text);
+}
+
+.pri-btn-disabled {
+    border: none;
+    background: var(--primary-disabled);
+    color: var(--primary-text);
+}
+
+.sec-btn {
+    border: none;
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.sec-btn-hover {
+    border: none;
+    background: var(--secondary-hover);
+    color: var(--secondary-text);
+}
+
+.sec-btn-disabled {
+    border: none;
+    background: var(--secondary-disabled);
+    color: var(--secondary-disabled-text);
+}
+
+.link-btn {
+    border: 1px solid var(--btn-light-border);
+    background: var(--btn-light);
+    color: var(--secondary-text);
+}
+
+.link-btn:hover {
+    background: var(--btn-light-hover);
+}
+
+.link-btn-outline {
+    border: 2px solid var(--primary-color);
+    background: var(--btn-light);
+    color: var(--primary-color);
+}
+
+.link-btn-outline:hover {
+    background: var(--btn-outline-hover)
+}
+
+.link-border-bottom {
+    border: none;
+    border-bottom: 3px solid var(--default-green);
+    background: var(--btn-border-bottom);
+    color: var(--secondary-text);
+}
+
+.link-border-bottom:hover {
+    background: var(--btn-border-bottom-hover)
+}
+
+.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+}
+
+.icon-btn:hover {
+    cursor: pointer;
+}
+
+.icon-pri {
+    border: none;
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+.icon-pri:hover {
+    border: none;
+    background: var(--primary-hover);
+    color: var(--primary-text);
+}
+
+.icon-light {
+    border: 1px solid var(--btn-light-border);
+    background: var(--btn-light);
+    color: var(--secondary-text);
+}
+
+.icon-light:hover {
+    background: var(--btn-light-hover);
+}
+
+.icon-dark {
+    border: none;
+    background: var(--btn-dark);
+    color: var(--btn-dark-text);
+}
+
+.icon-dark:hover {
+    background: var(--btn-dark-hover);
+}
+
+.fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 2px 15px 1px var(--shadow-before);
+}
+
+.fab-default {
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.fab:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 10px 1px var(--shadow-hover);
+}
+
+.fab-extended {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 3rem;
+}
+
+.fab-squircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 40%;
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+.fab-squircle:hover {
+    background: var(--primary-hover);
+    color: var(--primary-text);
+}
