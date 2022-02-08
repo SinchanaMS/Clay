@@ -52,9 +52,9 @@
 }
 
 .grey-badge {
-    background: var(--grey-badge);
+    background: var(--default-grey);
 }
 
 .green-badge {
-    background: var(--green-badge);
+    background: var(--default-green);
 }

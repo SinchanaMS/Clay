@@ -21,93 +21,136 @@
 
         <nav class="nav-bar">
             <h1 class="nav-title">Components</h1>
-            <a href="#" class="nav-subtitles">Avatars</a>
-            <a href="#" class="nav-subtitles">Alerts</a>
-            <a href="#" class="nav-subtitles">Badges</a>
-            <a href="#" class="nav-subtitles">Buttons</a>
-            <a href="#" class="nav-subtitles">Cards</a>
-            <a href="#" class="nav-subtitles">Images</a>
-            <a href="#" class="nav-subtitles">Input</a>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
         </nav>
 
         <section class="content buttons-section">
 
-            <div class="component-wrapper general-buttons">
-                <h1 class="wrapper-heading buttons-heading">Buttons</h1>
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Buttons</h1>
                 <hr>
-                <div class="description wrapper-description buttons-description">
+                <div class="description wrapper-description">
                     Buttons are HTML elements that are clickable that help with user's interaction with the website.
                     Buttons allow users to take actions, and make choices, with a single tap.
                 </div>
             </div>
 
-            <div class="component-wrapper primary-buttons-wrapper">
-                <h1 class="wrapper-heading buttons-heading">Primary Buttons</h1>
+            <div class="component-wrapper btns-wrapper">
+                <h1 class="wrapper-heading">Buttons - Variants</h1>
                 <hr>
-                <div class="description wrapper-description primary-buttons-description">
-                    Primary buttons provide extra visual weight and identify the primary action in a set of buttons.
-                    Here are some examples of primary buttons:
+                <div class="description wrapper-description">
+                    There are 3 variants - default, rounded and curved corners. Use class - "btn", "rounded-btn", or "curved-btn" for the preferred variant.
                 </div>
-                <div class="component-showcase primary-buttons">
-                    <button class="default-btn primary-btn-solid">
-                        Primary-Solid
+                <div class="component-showcase">
+                    <button class="btn">
+                        Default
                     </button>
 
-                    <button class="rounded-btn primary-btn-text">
-                        Primary-Text
+                    <button class="rounded-btn ">
+                        Rounded
+                    </button>
+
+                    <button class="curved-btn">
+                        Curved
+                    </button>
+                </div>
+            </div>
+
+            <div class="component-wrapper pri-btns-wrapper">
+                <h1 class="wrapper-heading">Primary Buttons</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Primary buttons provide extra visual weight and identify the primary action in a set of buttons.
+                    Use class "pri-btn" for primary buttons along with the preferred button variant.
+                </div>
+                <div class="component-showcase">
+                    <button class="btn pri-btn">
+                        Default
+                    </button>
+
+                    <button class="btn pri-btn pri-btn-hover">
+                        Hover
+                    </button>
+
+                    <button class="btn pri-btn pri-btn-disabled">
+                        Disabled
+                    </button>
+                </div>
+            </div>
+
+            <div class="component-wrapper sec-btns-wrapper">
+                <h1 class="wrapper-heading">Secondary Buttons</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Use class "sec-btn" for secondary buttons along with the preferred button variant.
+                </div>
+                <div class="component-showcase">
+                    <button class="rounded-btn sec-btn">
+                        Default
+                    </button>
+
+                    <button class="rounded-btn sec-btn-hover">
+                        Hover
+                    </button>
+
+                    <button class="rounded-btn sec-btn-disabled">
+                        Disabled
                     </button>
                 </div>
             </div>
 
             <div class="component-wrapper link-buttons-wrapper">
-                <h1 class="wrapper-heading buttons-heading">Link Button</h1>
+                <h1 class="wrapper-heading">Link Button</h1>
                 <hr>
-                <div class="description wrapper-description link-buttons-description">
-                    Here are examples of buttons with a link:
+                <div class="description wrapper-description">
+                    Here are examples of buttons with a link that take you to a different page on click. Use class "link-btn" for these buttons. There are 2 variants in addition to the default - "link-btn-outline" and "link-border-bottom". 
                 </div>
 
-                <div class="component-showcase link-button-container">
-                    <button class="curved-btn link-button">
-                        <a href="#" class="link-in-btn">Click Link</a>
+                <div class="component-showcase">
+                    <button class="rounded-btn link-btn">
+                        <a href="#" class="link-in-btn">Edit Profile</a>
                     </button>
 
-                    <button class="default-btn primary-btn-solid link-button">
-                        <a href="#" class="link-in-btn">Click Link</a>
+                    <button class="curved-btn link-btn-outline link-btn">
+                        <a href="#" class="link-in-btn">Create Account</a>
                     </button>
 
-                    <button class="rounded-btn primary-btn-text link-button">
-                        <a href="#" class="link-in-btn">Click Link</a>
-                    </button>
-
-                    <button class="squircle-btn link-button">
-                        <a href="#" class="link-in-btn">+</a>
+                    <button class="btn link-border-bottom link-btn">
+                        <a href="#" class="link-in-btn">Sign in</a>
                     </button>
                 </div>
             </div>
 
 
             <div class="component-wrapper icon-buttons-wrapper">
-                <h1 class="wrapper-heading buttons-heading">Icon Buttons</h1>
+                <h1 class="wrapper-heading">Icon Buttons</h1>
                 <hr>
-                <div class="description wrapper-description icon-buttons-description">
-                    Here are examples of buttons with an icon:
+                <div class="description wrapper-description">
+                    For buttons with icons, use class "icon-btn". Here are examples of buttons with an icon. 
+                    You may use classes "icon-pri" for primary, "icon-light" or "icon-dark" for the light and dark variants.
                 </div>
 
-                <div class="component-showcase icon-buttons-container">
-                    <button class="icon-btn icon-default default-btn">
+                <div class="component-showcase">
+                    <button class="icon-btn icon-pri btn">
                         <span class="material-icons md-18 material-icons-outlined">
                             add_shopping_cart
                         </span> Add to Cart
                     </button>
 
-                    <button class="icon-btn icon-light download-btn">
+                    <button class="icon-btn rounded-btn icon-light">
                         <span class="material-icons md-18 material-icons-outlined">
                             file_download
                         </span>
                         Download
                     </button>
 
-                    <button class="icon-btn icon-dark default-btn watch-later">
+                    <button class="icon-btn curved-btn icon-dark">
                         <span class="material-icons md-18 material-icons-outlined">
                             watch_later
                         </span> Watch Later
@@ -116,40 +159,35 @@
             </div>
 
             <div class="component-wrapper fab-wrapper">
-                <h1 class="wrapper-heading buttons-heading">Floating Action Buttons</h1>
+                <h1 class="wrapper-heading">Floating Action Buttons</h1>
                 <hr>
-                <div class="description wrapper-description fab-description">
+                <div class="description wrapper-description">
                     Floating Action Button (FAB), shaped like a circled
-                    icon floating above the UI, is a tool that allows users to call out the key parts of your app. Here
-                    are some examples of Floating Action Buttons:
+                    icon floating above the UI, is a tool that allows users to call out the key parts of your app. Use class "fab-default", "fab-extended" or "fab-squircle" for the preferred shapes along with the class "fab" to get the below floating action buttons.
                 </div>
 
-                <div class="component-showcase floating-btn">
+                <div class="component-showcase">
                     <button class="fab fab-default">
-                        +
+                        <span class="material-icons md-18 material-icons-outlined">
+                            edit
+                            </span>
                     </button>
 
                     <button class="fab fab-extended">
                         <span class="material-icons md-18 material-icons-outlined">
-                            edit
-                        </span>
+                            add
+                            </span>
+                        <p class="fab-ext-text">Add Item</p>
                     </button>
 
-                    <button class="fab fab-">
+                    <button class="fab fab-squircle">
                         <span class="material-icons md-18 material-icons-outlined">
                             chat
                         </span>
                     </button>
-
-                    <button class="fab fab squircle-btn link-button">
-                        <a href="#" class="link-in-btn">+</a>
-                    </button>
                 </div>
             </div>
-
-
         </section>
-
     </div>
 </body>
 

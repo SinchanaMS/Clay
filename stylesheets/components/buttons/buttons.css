@@ -1,21 +1,9 @@
 @import "/stylesheets/index.css";
 
-.primary-buttons-wrapper {
-    background: #f3eae0;
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
 }
-
-.link-buttons-wrapper {
-    background: #f7f5f4
-}
-
-.icon-buttons-wrapper {
-    background: #f0eee9
-}
-
-.fab-wrapper {
-    background: #ebe0d4
-}
-
 
 .rounded-btn {
     padding: 0.5rem 2rem;
@@ -27,108 +15,157 @@
     border-radius: 10px;
 }
 
-.link-button {
-    border: 1.5px solid var(--success-text);
-    background: #385c23;
-    color:  #fdfffd;
-}
-
-.link-button:hover {
-    background: #73995c;
-    cursor: pointer;
-}
-
-.primary-btn-solid {
+.pri-btn {
     border: none;
     background: var(--primary-color);
     color: var(--primary-text);
 }
 
-.primary-btn-solid:hover {
-    background: #883e23;
-    cursor: pointer;
-}
-
-
-.primary-btn-text {
-    background: #f0edec;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color)
-}
-
-.primary-btn-text:hover {
-    background: #d8cec9;
-    cursor: pointer;
-}
-
-.default-btn {
-    padding: 0.5rem 2rem;
-    border-radius: 5px;
-}
-
-.squircle-btn{
-    height: 50px;
-    width: 50px;
-    border-radius:40% ;
+.pri-btn-hover {
     border: none;
-    background: #9cada7;
-    color: #0c1611;
-    text-align: center;
+    background: var(--primary-hover);
+    color: var(--primary-text);
 }
 
-.squircle-btn:hover{
-    background: #aec7be;
-    color: #0c1611;
+.pri-btn-disabled {
+    border: none;
+    background: var(--primary-disabled);
+    color: var(--primary-text);
 }
 
-.icon-btn{
+.sec-btn {
+    border: none;
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.sec-btn-hover {
+    border: none;
+    background: var(--secondary-hover);
+    color: var(--secondary-text);
+}
+
+.sec-btn-disabled {
+    border: none;
+    background: var(--secondary-disabled);
+    color: var(--secondary-disabled-text);
+}
+
+.link-btn {
+    border: 1px solid var(--btn-light-border);
+    background: var(--btn-light);
+    color: var(--secondary-text);
+}
+
+.link-btn:hover {
+    background: var(--btn-light-hover);
+}
+
+.link-btn-outline {
+    border: 2px solid var(--primary-color);
+    background: var(--btn-light);
+    color: var(--primary-color);
+}
+
+.link-btn-outline:hover {
+    background: var(--btn-outline-hover)
+}
+
+.link-border-bottom {
+    border: none;
+    border-bottom: 3px solid var(--default-green);
+    background: var(--btn-border-bottom);
+    color: var(--secondary-text);
+}
+
+.link-border-bottom:hover {
+    background: var(--btn-border-bottom-hover)
+}
+
+.icon-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
     gap: 6px;
+    padding: 12px;
 }
 
-.icon-btn:hover{
-cursor: pointer;
+.icon-btn:hover {
+    cursor: pointer;
 }
 
-.icon-default{
+.icon-pri {
+    border: none;
     background: var(--primary-color);
     color: var(--primary-text);
+}
+
+.icon-pri:hover {
     border: none;
+    background: var(--primary-hover);
+    color: var(--primary-text);
 }
 
-.icon-light{
-    background: #ece8e8;
-    border: 1px solid #b9b6b6
+.icon-light {
+    border: 1px solid var(--btn-light-border);
+    background: var(--btn-light);
+    color: var(--secondary-text);
 }
 
-.icon-dark{
-    background: #363b3f;
+.icon-light:hover {
+    background: var(--btn-light-hover);
+}
+
+.icon-dark {
     border: none;
-    color: #f1e9e9;
+    background: var(--btn-dark);
+    color: var(--btn-dark-text);
 }
 
-.fab{
+.icon-dark:hover {
+    background: var(--btn-dark-hover);
+}
+
+.fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 3rem;
     width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
-    border-radius: 50%;
     border: none;
-    box-shadow: 1px 2px 15px 1px #ccc7bd;
+    border-radius: 50%;
+    box-shadow: 1px 2px 15px 1px var(--shadow-before);
+}
+
+.fab-default {
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.fab:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 10px 1px var(--shadow-hover);
+}
+
+.fab-extended {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 3rem;
+}
+
+.fab-squircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 40%;
     background: var(--primary-color);
     color: var(--primary-text);
 }
 
-.fab:hover{
-    cursor: pointer;
-    box-shadow: 1px 5px 10px 1px #ada697;
-}
-
-.fab-extended{
-
+.fab-squircle:hover {
+    background: var(--primary-hover);
+    color: var(--primary-text);
 }
