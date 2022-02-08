@@ -1,0 +1,56 @@
+@import "/stylesheets/index.css";
+@import "/stylesheets/components/avatars/avatars.css";
+
+
+.img-responsive{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.round-img img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.squared-img img{
+    width: 300px;
+    height: 300px;   
+}
+
+.sq-img-showcase{
+    align-items: flex-end;
+}
+
+.sq-img.small{
+    width: 150px;
+    height: 150px;
+}
+
+.sq-img.medium{
+    width: 200px;
+    height: 200px;
+}
+
+.sq-img.large{
+    width: 250px;
+    height: 250px;
+}
+
+.img-round.small{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.img-round.medium{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-round.large{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
