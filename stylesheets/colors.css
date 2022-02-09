@@ -58,5 +58,18 @@
     --res-img-section: #e8deda;
     --sq-img-section: #e6d3cd;
     --rd-img-section: #ddd8a9;
-}
 
+    --textbox-section: #f1f5f9;
+    --lbl-input-section: #eff3f3;
+    --val-input-section: #f5f5f5;
+    --radio-section: #eaf1ef;
+    --checkbox-section: #e9f0e8;
+
+    --textbox-bg: #f5f5f5;
+    --success-input: #008000;
+    --warn-input: #92680b;
+
+    --grid-2-section: #fef2f2;
+    --grid-3-section: #fdf2f8;
+    --grid-wrapper: #fafafa;
+}

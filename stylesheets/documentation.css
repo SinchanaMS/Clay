@@ -142,19 +142,20 @@
 }
 
 /* Buttons */
-.btns-wrapper{
-    background:var(--btns-section) ;
+.btns-wrapper {
+    background: var(--btns-section);
 }
+
 .pri-btns-wrapper {
     background: var(--pri-btns-section);
 }
 
-.sec-btns-wrapper{
-    background: var(--sec-btns-section); 
+.sec-btns-wrapper {
+    background: var(--sec-btns-section);
 }
 
 .link-buttons-wrapper {
-    background: var( --link-buttons-section)
+    background: var(--link-buttons-section)
 }
 
 .icon-buttons-wrapper {
@@ -177,4 +178,54 @@
 
 .rd-img-wrapper {
     background: var(--rd-img-section)
+}
+
+/* Inputs */
+
+.textbox-wrapper {
+    background: var(--textbox-section);
+}
+
+.labelled-inputs-wrapper {
+    background: var(--lbl-input-section);
+}
+
+.validation-inputs-wrapper {
+    background: var(--val-input-section);
+}
+
+.radio-btns-wrapper {
+    background: var(--radio-section)
+}
+
+.checkbox-wrapper {
+    background: var(--checkbox-section)
+}
+
+/* Grids */
+.grid-2-wrapper {
+    background: var(--grid-2-section);
+}
+
+.grid-3-wrapper {
+    background: var(--grid-3-section);
+}
+
+.grid-wrapper {
+    width: 80%;
+    margin-bottom: 2rem;
+    background: var(--grid-wrapper);
+    outline: 2px solid var(--secondary-color);
+}
+
+.grid-text {
+    text-align: center;
+    align-self: center;
+}
+
+.grid-text button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 0.5px solid var(--default-grey)
 }
