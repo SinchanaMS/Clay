@@ -178,3 +178,25 @@
 .rd-img-wrapper {
     background: var(--rd-img-section)
 }
+
+/* Inputs */
+
+.textbox-wrapper{
+    background: var(--textbox-section);
+}
+
+.labelled-inputs-wrapper{
+    background: var(--lbl-input-section);
+}
+
+.validation-inputs-wrapper{
+    background: var(--val-input-section);
+}
+
+.radio-btns-wrapper{
+    background:var(--radio-section)
+}
+
+.checkbox-wrapper{
+    background: var(--checkbox-section)
+}
