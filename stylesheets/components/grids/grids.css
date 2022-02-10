@@ -1,0 +1,23 @@
+@import "/stylesheets/index.css";
+@import "/stylesheets/components/buttons/buttons.css";
+
+.grid-one-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.grid-70-30{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.grids-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.grids-3 img{
+    height: 100%
+}
