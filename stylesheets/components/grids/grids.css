@@ -1,4 +1,5 @@
 @import "/stylesheets/index.css";
+@import "/stylesheets/components/buttons/buttons.css";
 
 .grid-one-one{
     display: grid;
