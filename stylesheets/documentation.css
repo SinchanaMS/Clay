@@ -77,20 +77,6 @@
     margin: auto;
 }
 
-.code-snippet {
-    text-align: left;
-    width: 50%;
-    margin: auto;
-    border-radius: 7px;
- }
- 
- .class-highlight{
-    background: var(--code-highlight-bg);
-    padding: 5px;
-    border-radius: 5px;
- }
- 
-
 /* Avatars Section */
 .sized-avatars {
     background: var(--sized-avatars-section)
@@ -243,39 +229,3 @@
     border-radius: 5px;
     border: 0.5px solid var(--default-grey)
 }
-
-/* Text Utils */
-.headings-wrapper {
-    background: var(--headings-section);
- }
- 
- .paragraphs-wrapper{
-    background: var(--paragraphs-section)
- }
- 
- .text-alignment-wrapper{
-    background: var(--text-alignment-section)
- }
-
- .headings {
-    outline: 1px solid var(--secondary-color);
-    padding: 2rem;
-    margin: 2rem auto;
-    background: var(--text-utils-demo-bg)
- }
-
- .paragraphs {
-    outline: 1px solid var(--secondary-color);
-    padding: 2rem;
-    margin: 2rem auto;
-    background: var(--text-utils-demo-bg)
- }
- 
-.text-alignment{
-    outline: 1px solid var(--secondary-color);
-    padding: 2rem;
-    margin: 2rem auto;
-    background: var(--text-utils-demo-bg);
-    width: 50%
- }
- 
