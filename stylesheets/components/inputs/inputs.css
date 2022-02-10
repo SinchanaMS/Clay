@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-label {
+.label-top label {
     display: block;
 }
 
@@ -30,7 +30,13 @@ label {
     gap: 5px
 }
 
-input {
+.labelled-input input {
+    min-width: 20rem;
+    padding: 5px;
+    border: 1.7px solid;
+}
+
+.val-input input {
     min-width: 20rem;
     padding: 5px;
     border: 1.7px solid;
