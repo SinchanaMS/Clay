@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <link rel="stylesheet" href="/stylesheets/components/inputs/inputs.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <h1 class="header-title">Clay</h1>
+        </header>
+
+        <nav class="nav-bar">
+            <h1 class="nav-title">Components</h1>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+        </nav>
+
+        <section class="content inputs-section">
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Inputs</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Any information from a user is taken as an input. These components help with a user's interaction
+                    with the website. Below are the types of inputs available.
+                </div>
+            </div>
+
+            <div class="component-wrapper textbox-wrapper">
+                <h1 class="wrapper-heading">Text box</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    A textbox can be used for multi-line input. Use class "textbox" to use this component.
+                    <br>
+                    You may keep the default shape or use class "textbox-curved" for curved corners.
+                    <br>
+                    Use class "resize" if you wish to keep the resizing of the text box on. By default it is set to
+                    non-resizable.
+                </div>
+                <div class="component-showcase">
+                    <textarea class="textbox resize" type="number" rows="5" cols="30"
+                        placeholder="Resize enabled. Drag to resize."></textarea>
+
+                    <textarea class="textbox textbox-curved" type="number" rows="5" cols="40"
+                        placeholder="Enter your message here..."></textarea>
+                </div>
+            </div>
+
+            <div class="component-wrapper labelled-inputs-wrapper">
+                <h1 class="wrapper-heading">Labelled Inputs</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Labelled Input has a label to the input field. Use class "labelled-input" in the
+                    parent container. "label-left" positions the label to the left of the input box and "label-top" positions the label at the top of the input box.
+                </div>
+                <div class="component-showcase-col">
+
+                    <div class="labelled-input label-top">
+                        <label class="label"> Last Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="labelled-input label-left">
+                        <label class="label"> First Name *</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper validation-inputs-wrapper">
+                <h1 class="wrapper-heading">Validation Inputs</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    The below input styles can be used to validate the user input and display messages accordingly.
+                    <br>
+                    Use class "val-success", "val-warn" or "val-error" for success message, warning or error message
+                    respectively in the parent container.
+                </div>
+                <div class="component-showcase-col">
+                    <div class="val-input val-success label-top">
+                        <label class="label"> Username *</label>
+                        <input type="text">
+                        <div class="val-msg">Username set successfully.</div>
+                    </div>
+                    <div class="val-input val-warn label-top">
+                        <label class="label"> Comments </label>
+                        <input type="text">
+                        <div class="val-msg">10 characters remaining.</div>
+                    </div>
+                    <div class="val-input val-error label-top">
+                        <label class="label"> Password *</label>
+                        <input type="text">
+                        <div class="val-msg">Incorrect password. 2 attempts remaining.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper radio-btns-wrapper">
+                <h1 class="wrapper-heading">Radio Buttons</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Radio buttons help the user select one out of the many options at once.
+                </div>
+                <div class="component-showcase">
+                    <div class="radio-btn">
+                        <input type="radio" name="radio-btn" checked>
+                        <label class="label"> Checked</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" name="radio-btn">
+                        <label class="label"> Unchecked</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" name="radio-btn" disabled>
+                        <label class="label"> Disabled</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper checkbox-wrapper">
+                <h1 class="wrapper-heading">Checkboxes</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Checkboxes are used to select multiple options at once.
+                </div>
+                <div class="component-showcase">
+                    <div class="checkbox-btn">
+                        <input type="checkbox" name="checkbox" checked>
+                        <label class="label"> Checked</label>
+                    </div>
+                    <div class="checkbox-btn">
+                        <input type="checkbox" name="checkbox">
+                        <label class="label"> Check this</label>
+                    </div>
+                    <div class="checkbox-btn">
+                        <input type="checkbox" name="checkbox" disabled>
+                        <label class="label"> Disabled</label>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

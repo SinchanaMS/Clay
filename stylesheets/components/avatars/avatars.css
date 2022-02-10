@@ -23,13 +23,13 @@
 }
 
 .border-red {
-    outline: 5px solid var(--border-red)
+    outline: 5px solid var(--default-red)
 }
 
 .border-green {
-    outline: 5px solid var(--border-green)
+    outline: 5px solid var(--default-green)
 }
 
 .border-grey {
-    outline: 5px solid var(--border-grey)
+    outline: 5px solid var(--default-grey)
 }
