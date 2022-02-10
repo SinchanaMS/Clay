@@ -18,6 +18,8 @@
     --secondary-disabled: #d3bebc;
     --secondary-disabled-text: #9b9494;
 
+    --code-highlight-bg: #d8d4d4;
+
     --default-red: #af2b21;
     --default-green: #6ab91b;
     --default-grey: #969494;
@@ -72,4 +74,9 @@
     --grid-2-section: #fef2f2;
     --grid-3-section: #fdf2f8;
     --grid-wrapper: #fafafa;
+
+    --headings-section:  #f0e3e3;
+    --paragraphs-section: #f1ebeb;
+    --text-alignment-section: #eeebeb;
+    --text-utils-demo-bg: #ffffff;
 }

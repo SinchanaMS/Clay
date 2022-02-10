@@ -1,0 +1,9 @@
+@import "/stylesheets/index.css";
+
+.star{
+    color: var(--default-grey);
+}
+
+.ratings-after .star{
+    color: gold;
+}

@@ -77,6 +77,19 @@
     margin: auto;
 }
 
+.code-snippet {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    border-radius: 7px;
+ }
+ 
+ .class-highlight{
+    background: var(--code-highlight-bg);
+    padding: 5px;
+    border-radius: 5px;
+ }
+
 /* Avatars Section */
 .sized-avatars {
     background: var(--sized-avatars-section)
