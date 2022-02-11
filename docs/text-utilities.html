@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils</title>
+    <link rel="stylesheet" href="/stylesheets/components/text-utilities/text-utilities.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <h1 class="header-title">Clay</h1>
+        </header>
+        <nav class="nav-bar">
+            <h1 class="nav-title">Components</h1>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+        </nav>
+
+        <section class="content">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Text Utilities</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Text Utilities are made of typography that helps in making the text legible, readable and appealing
+                    to the user.
+                </div>
+            </div>
+
+            <div class="component-wrapper headings-wrapper">
+                <h1 class="wrapper-heading">Headings</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    There are 6 variants of headings available - h1 through h6.
+                    Use the tags <code class="class-highlight">h1</code> through <code class="class-highlight">h6</code> as per the preferred size.
+                </div>
+                <div class="component-showcase-col headings">
+                    <h1>This is h1 heading.</h1>
+                    <h2>This is h2 heading.</h2>
+                    <h3>This is h3 heading.</h3>
+                    <h4>This is h4 heading.</h4>
+                    <h5>This is h5 heading.</h5>
+                    <h6>This is h6 heading.</h6>
+                </div>
+
+                <pre><code class="code-snippet language-html">
+<h1>This is h1 heading.</h1>
+<h2>This is h2 heading.</h2>
+<h3>This is h3 heading.</h3>
+<h4>This is h4 heading.</h4>
+<h5>This is h5 heading.</h5>
+<h6>This is h6 heading.</h6>
+</code></pre>
+
+            </div>
+
+            <div class="component-wrapper paragraphs-wrapper">
+                <h1 class="wrapper-heading">Paragraphs</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Paragraphs are written using p tags. These can be used for subtitles, descriptions or plain texts.
+                    <br>
+                    We have 5 sizes available alongwith a grey variant. Use class <code class="class-highlight">p-xl</code> for extra large text, <code class="class-highlight">p-lg</code> for large text, <code class="class-highlight">p-sm</code> for small text, <code class="class-highlight">p-xs</code> for extra small text and <code class="class-highlight">p-grey</code> for grey text. Adding no class results in the default text.
+                </div>
+                <div class="component-showcase-col paragraphs">
+
+                    <p class="p-xl">This is an extra large text.</p>
+                    <p class="p-lg">This is a large text.</p>
+                    <p>This is the default text.</p>
+                    <p class="p-sm">This is a small text.</p>
+                    <p class="p-xs">This is an extra small text.</p>
+                    <p class="p-grey">This is a grey text.</p>
+                </div>
+
+                <pre><code class="code-snippet language-html">
+<p class="p-xl">This is an extra large text.</p>
+<p class="p-lg">This is a large text.</p>
+<p>This is the default text.</p>
+<p class="p-sm">This is a small text.</p>
+<p class="p-xs">This is an extra small text.</p>
+<p class="p-grey">This is a grey text.</p>
+</code></pre>
+            </div>
+
+            <div class="component-wrapper text-alignment-wrapper">
+                <h1 class="wrapper-heading">Text Alignment</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Below, we have text aligned left, right, and center. Use class <code class="class-highlight">text-left</code> for left alignment, <code class="class-highlight">text-center</code> for center alignment, or <code class="class-highlight">text-right</code> for right alignment.
+                </div>
+                <div class="component-showcase-col text-alignment">
+
+                    <p class="text-left p-xl">This is aligned left.</p>
+                    <p class="text-center p-grey">This is aligned center.</p>
+                    <p class="text-right">This is aligned right.</p>
+                </div>
+
+<pre><code class="code-snippet language-html">
+<p class="text-left">This is aligned left.</p>
+<p class="text-center">This is aligned center.</p>
+<p class="text-right">This is aligned right.</p>
+</code></pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
+</body>
+
+</html>
