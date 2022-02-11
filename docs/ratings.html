@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings</title>
+    <link rel="stylesheet" href="/stylesheets/components/ratings/ratings.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <h1 class="header-title">Clay</h1>
+        </header>
+
+        <nav class="nav-bar">
+            <h1 class="nav-title">Components</h1>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+        </nav>
+
+        <section class="content ratings-section">
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Ratings</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Ratings are provided by the customers or consumers who have either purchased a product or have had
+                    an experience of the service provided to them.
+                    <br>
+                    Usually, ratings are gauged using stars. Use class <code class="class-highlight">stars-container</code>in the parent container. Use class <code class="class-highlight">star</code> along with the preferred fill options - <code class="class-highlight">filled-star</code>, <code class="class-highlight">half-star</code> or <code class="class-highlight">outlined-star</code>.
+                </div>
+
+                <div class="component-showcase-col ratings-before">
+                    <h3 class="rating-before">Before Rating:</h3>
+                    <div class="stars-container">
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="component-showcase-col ratings-after">
+                    <h3 class="rating-before">After Rating:</h3>
+                    <div class="stars-container">
+                        <span class="star filled-star material-icons md-36 material-icons-outlined">
+                            star
+                        </span>
+                        <span class="star filled-star material-icons md-36 material-icons-outlined">
+                            star
+                        </span>
+                        <span class="star filled-star material-icons md-36 material-icons-outlined">
+                            star
+                        </span>
+                        <span class="star half-star material-icons md-36 material-icons-outlined">
+                            star_half
+                        </span>
+                        <span class="star outlined-star material-icons md-36 material-icons-outlined">
+                            star_outline
+                        </span>
+                    </div>
+                </div>
+
+                <br>
+<pre><code class="code-snippet">
+<div class="stars-container">
+    <span class="star filled-star material-icons md-36 material-icons-outlined">
+        star
+    </span>
+    <span class="star filled-star material-icons md-36 material-icons-outlined">
+        star
+    </span>
+    <span class="star filled-star material-icons md-36 material-icons-outlined">
+        star
+    </span>
+    <span class="star half-star material-icons md-36 material-icons-outlined">
+        star_half
+    </span>
+    <span class="star outlined-star material-icons md-36 material-icons-outlined">
+        star_outline
+    </span>
+</div>
+</code></pre>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
+</body>
+
+</html>
