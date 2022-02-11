@@ -1,0 +1,39 @@
+@import "/stylesheets/index.css";
+@import "/stylesheets/components/images/images.css";
+
+
+.headings h1 {
+   font-size: 2em;
+}
+
+.p-xl {
+   font-size: x-large;
+}
+
+.p-lg {
+   font-size: large
+}
+
+.p-sm {
+   font-size: small
+}
+
+.p-xs {
+   font-size: x-small
+}
+
+.p-grey {
+   color: grey;
+}
+
+.text-left{
+   text-align: left;
+}
+
+.text-center{
+   text-align: center;
+}
+
+.text-right{
+   text-align: right;
+}
