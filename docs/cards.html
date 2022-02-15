@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="/stylesheets/components/cards/cards.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <h1 class="header-title">Clay</h1>
+        </header>
+        <nav class="nav-bar">
+            <h1 class="nav-title">Components</h1>
+            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
+            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
+            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
+            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
+            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
+            <a href="/docs/images.html" class="nav-subtitles">Images</a>
+            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+        </nav>
+
+        <section class="content">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    A Card component resembles a playing card and contains short, related pieces of information. They
+                    are used either to group information, present a summary or a link to additional details. Below are a
+                    few types of available cards.
+                </div>
+            </div>
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards with Badges</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Here are some examples of cards with badges.
+                    Use the class <code class="class-highlight">card-badge</code> in the badge element.
+                    <br>
+                    The badge can be positioned to the right of the card using class <code
+                        class="class-highlight">badge-right</code> in the badge element. By default it is set to the
+                    left.
+                    <br><br>
+                    <p>The following colors are available:
+                        <ol>
+                            <li>Red: <code class="class-highlight">red-badge</code></li>
+                            <li>Default (gold): <code class="class-highlight">card-badge-def</code></li>
+                            <li>Grey: <code class="class-highlight">grey-badge</code></li>
+                            <li>Green: <code class="class-highlight">green-badge</code></li>
+                            </ul>
+                    </p>
+                </div>
+                <div class="component-showcase cards-w-badges">
+                    <div class="card-container">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge red-badge">Selling Fast</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge card-badge-def badge-right">New</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge grey-badge">Out of Stock</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards with Dismiss</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Here is a Card that can be dismissed. Use class <code class="class-highlight">dismiss-btn</code> in
+                    the dismiss element within the card's container.
+                </div>
+                <div class="component-showcase cards-w-dismiss">
+                    <div class="card-container">
+                        <div class="card-child card-header">
+                            <button class="dismiss-btn">
+                                <span class="material-icons md-18 material-icons-outlined">close
+                                </span>
+                            </button>
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge card-badge-def">New</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards with Text Overlay</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Use the class <code class="class-highlight">overlay-text</code> in the element that you need as an
+                    overlay.
+                </div>
+                <div class="component-showcase cards-w-overlay">
+                    <div class="card-container card-disabled">
+                        <div class="card-child card-header">
+                            <button class="dismiss-btn"><span
+                                    class="dismiss material-icons md-18 material-icons-outlined">
+                                    close
+                                </span></button>
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="overlay-text grey-badge">Out of Stock</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </diV>
+                </div>
+            </div>
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards - Text Only</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    The below cards are only text with no images.
+
+                    <br>
+                    There are 2 variants available: <code class="class-highlight">text-horizontal</code> and <code
+                        class="class-highlight">text-vertical</code>, based on the preferred type of card. Use these
+                    classes along with the class <code class="class-highlight">text-only</code> in the card's container.
+                </div>
+                <div class="component-showcase cards-text-only">
+                    <div class="card-container text-only text-horizontal">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Title </h4>
+                            <p class="card-subtitle p-sm">Subtitle</p-sm>
+                        </div>
+                        <div class="card-badge card-badge-def badge-right">New!!</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                quae sapiente cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo
+                                atque alias velit earum voluptate magni. Eos deserunt cum voluptatibus laborum.
+                                Corrupti, vel nobis incidunt culpa sequi voluptatum totam dicta!</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="actions-wrapper">
+                                <button class="action-btn p-sm">Read More</button>
+                                <button class="action-btn p-sm">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container text-only text-vertical">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Title </h4>
+                            <p class="card-subtitle p-sm">Subtitle</p-sm>
+                        </div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                quae sapiente cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo
+                                atque alias velit earum voluptate magni. Eos deserunt cum voluptatibus laborum.
+                                Corrupti, vel nobis incidunt culpa sequi voluptatum totam dicta!</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="actions-wrapper">
+                                <button class="action-btn p-sm">Read More</button>
+                                <button class="action-btn p-sm">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Cards - Horizontal/Vertical</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Cards can either be vertical or horizontal and with or without images. Below, we have all 4 variants
+                    shown. Use the classes as mentioned in the previous section in case of text-only cards. For cards
+                    with images, use the class <code class="class-highlight">card-horizontal</code> in the card
+                    container for horizontal cards and class <code class="class-highlight">card-vertical</code> for
+                    vertical cards.
+                </div>
+                <div class="component-showcase cards-v-h">
+                    <div class="card-container text-only text-horizontal">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Title </h4>
+                            <p class="card-subtitle p-sm">Subtitle</p-sm>
+                        </div>
+                        <div class="card-badge card-badge-def badge-right">New!!</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                quae sapiente cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo
+                                atque alias velit earum voluptate magni. Eos deserunt cum voluptatibus laborum.
+                                Corrupti, vel nobis incidunt culpa sequi voluptatum totam dicta!</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="actions-wrapper">
+                                <button class="action-btn p-sm">Read More</button>
+                                <button class="action-btn p-sm">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container card-horizontal">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/61tknpGYn8S._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <div class="header-titles">
+                                <h4 class="card-title">Habit Tracker </h4>
+                                <p class="card-subtitle p-sm">Rs. 199</p-sm>
+
+                            </div>
+                        </div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                quae sapiente cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo
+                                atque alias velit earum voluptate magni. Eos deserunt cum voluptatibus laborum.
+                                Corrupti, vel nobis incidunt culpa sequi voluptatum totam dicta!</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="actions-wrapper">
+                                <button class="action-btn p-sm">Add to Cart</button>
+                                <button class="action-btn p-sm">Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container text-only text-vertical">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Title </h4>
+                            <p class="card-subtitle p-sm">Subtitle</p-sm>
+                        </div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                quae sapiente cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo
+                                atque alias velit earum voluptate magni. Eos deserunt cum voluptatibus laborum.
+                                Corrupti, vel nobis incidunt culpa sequi voluptatum totam dicta!</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="actions-wrapper">
+                                <button class="action-btn p-sm">Read More</button>
+                                <button class="action-btn p-sm">Bookmark</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container card-vertical">
+                        <div class="card-child card-header">
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge red-badge">Selling Fast</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-wrapper cards-with-shadow-wrapper">
+                    <h1 class="wrapper-heading">Cards with Shadow</h1>
+                    <hr>
+                    <div class="description wrapper-description">
+                        Here is a card that has a shadow, giving it a 3D look. Use class <code
+                            class="class-highlight">shadow</code> on the card's container to apply the shadow effect.
+                    </div>
+                    <div class="component-showcase cards-w-shadow">
+                        <div class="card-container shadow">
+                            <div class="card-child card-header">
+                                <button class="dismiss-btn">
+                                    <span class="dismiss material-icons md-18 material-icons-outlined">close
+                                    </span>
+                                </button>
+                                <img class="card-img"
+                                    src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                    alt="">
+                                <h4 class="card-title">Lauret Blanc </h4>
+                                <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                            </div>
+                            <div class="card-badge card-badge-def">New</div>
+                            <div class="card-child card-body">
+                                <hr>
+                                <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                            </div>
+                            <div class="card-child card-footer">
+                                <div class="discounted-price">Rs. 299</div>
+                                <div class="actual-price p-sm">Rs. 499</div>
+                                <div class="discount p-sm">60% OFF</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
+</body>
+
+</html>
