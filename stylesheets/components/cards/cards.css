@@ -1,0 +1,229 @@
+@import "/stylesheets/index.css";
+@import "/stylesheets/components/badges/badges.css";
+@import "/stylesheets/components/text-utilities/text-utilities.css";
+
+/* goes in documentation.css */
+.cards-w-badges {
+    background: #e7dbdb;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.cards-w-dismiss {
+    background: #e2d4ce;
+    padding: 3rem;
+}
+
+.cards-w-overlay {
+    background: #725b5b;
+    padding: 3rem;
+}
+
+.cards-text-only {
+    background: #e4cfcf;
+    padding: 3rem;
+}
+
+.cards-v-h {
+    display: flex;
+    flex-wrap: wrap;
+    background: #dfcfc4;
+    padding: 3rem;
+}
+
+.cards-w-shadow {
+    background: #f1e9e7;
+    padding: 3rem;
+}
+
+/* goes in colors.css */
+:root {
+    --card-badge-def: #ffd700;
+    --card-bg: #f1f5f9;
+    --shadow-grey: #6161612e
+}
+
+.card-badge-def {
+    background: var(--card-badge-def);
+    color: var(--secondary-text);
+}
+
+.red-badge {
+    background-color: var(--default-red);
+    color: var(--primary-text);
+}
+
+.grey-badge {
+    color: var(--primary-text);
+}
+
+/* stays in cards.css */
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    width: 15.5rem;
+    max-width: 100%;
+    margin: auto;
+    padding: 7px;
+    background: var(--card-bg);
+}
+
+.card-child {
+    padding: 4px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    max-height: 50%;
+}
+
+.card-header .card-img {
+    height: 200px;
+    max-height: 40%;
+    max-width: 80%;
+    margin: 5px auto;
+    padding: 1rem
+}
+
+.card-body {
+    max-height: 70%;
+    padding-top: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+    outline: thin solid var(--secondary-color)
+}
+
+.actual-price {
+    color: var(--secondary-color);
+    text-decoration: line-through;
+}
+
+.discount {
+    color: var(--default-green);
+}
+
+.card-badge {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    padding: 0px 6px;
+    border-radius: 2px;
+}
+
+.badge-right {
+    position: absolute;
+    top: 8px;
+    left: auto;
+    right: 2px;
+}
+
+.dismiss-btn {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+}
+
+.card-disabled .card-header,
+.card-disabled .card-body,
+.card-disabled .card-footer {
+    opacity: 50%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translate(0, -50%);
+    text-align: center;
+    padding: 2px;
+}
+
+.text-horizontal .card-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.text-vertical .card-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+}
+
+.text-only .card-img {
+    display: none;
+}
+
+.text-only .card-footer {
+    outline: none;
+}
+
+.actions-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn {
+    padding: 3px 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.action-btn:nth-child(1) {
+    background: var(--primary-color);
+    color: var(--primary-text);
+}
+
+.action-btn:nth-child(2) {
+    background: var(--secondary-color);
+    color: var(--secondary-text);
+}
+
+.card-horizontal .card-img {
+    display: inline;
+    margin: 0px;
+    height: 40%;
+    width: 40%;
+    padding: 0px
+}
+
+.card-horizontal .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px;
+    gap: 10px;
+}
+
+.card-horizontal .header-titles {
+    align-self: center;
+}
+
+.card-horizontal .card-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.card-horizontal .card-footer {
+    outline: none;
+}
+
+.shadow {
+    box-shadow: 0px 2px 4px var(--shadow-grey), 0px 4px 8px var(--shadow-grey)
+}
