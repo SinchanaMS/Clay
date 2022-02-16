@@ -11,87 +11,144 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
+
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
-        <section class="content alerts-section">
-            <div class="component-wrapper general-alerts">
-                <h1 class="wrapper-heading alerts-heading">Alerts</h1>
+        <section class="content">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Alerts</h1>
                 <hr>
-                <div class="description wrapper-description alerts-description">
+                <div class="description">
                     Alerts help a user understand the current status of an action without interrupting the user's flow.
+                    There are 5 variants available - success alert, warning alert, danger alert, primary alert with link
+                    and secondary alert with link.
                 </div>
             </div>
 
             <div class="component-wrapper simple-alerts">
-                <h1 class="wrapper-heading alerts-heading">Simple Alerts</h1>
+                <h1 class="wrapper-heading">Simple Alerts</h1>
                 <hr>
-                <div class="description wrapper-description alerts-simple-description">
+                <div class="description">
+                    These are alerts without any icons, they only hold the text.
+                    <br>
+                    Use the class <code
+                        class="class-highlight">alerts</code> along with the variant class as preferred - <code
+                        class="class-highlight">success-alert</code>, <code
+                        class="class-highlight">warning-alert</code>, <code class="class-highlight">danger-alert</code>,
+                    <code class="class-highlight">primary-alert-link</code> or <code
+                        class="class-highlight">secondary-alert-link</code>.
+                    <br><br>
                     Here are some simple alerts:
                 </div>
 
                 <div class="component-showcase alerts-simple">
-                    <div class="alerts success-alert simple">
+                    <div class="alerts success-alert">
                         This is a simple success alert!
                     </div>
-                    <div class="alerts warning-alert simple">
+                    <div class="alerts warning-alert">
                         This is a simple warning alert!
                     </div>
-                    <div class="alerts danger-alert simple">
+                    <div class="alerts danger-alert">
                         This is a simple danger alert!
                     </div>
 
-                    <div class="alerts  primary-alert-link simple">
+                    <div class="alerts  primary-alert-link">
                         A simple primary alert with an <a href="#">example link</a>. Give it a click if you like.
                     </div>
 
-                    <div class="alerts  secondary-alert-link simple">
+                    <div class="alerts  secondary-alert-link">
                         A simple secondary alert with an <a href="#">example link</a>. Give it a click if you like.
                     </div>
                 </div>
+
+<pre><code class="code-snippet">
+<div class="alerts success-alert">
+    This is a simple success alert!
+</div>
+
+<div class="alerts warning-alert">
+    This is a simple warning alert!
+</div>
+
+<div class="alerts danger-alert">
+    This is a simple danger alert!
+</div>
+
+<div class="alerts  primary-alert-link">
+    A simple primary alert with an <a href="#">insert link here</a>.
+</div>
+
+<div class="alerts  secondary-alert-link">
+    A simple secondary alert with an <a href="#">insert link here</a>.
+</div>
+</code></pre>
+
             </div>
 
-
             <div class="component-wrapper alerts-with-icons">
-                <h1 class="wrapper-heading alerts-heading">Alerts with Icons</h1>
+                <h1 class="wrapper-heading">Alerts with Icons</h1>
                 <hr>
-                <div class="description wrapper-description alerts-with-icons-description">
+                <div class="description">
+                    Alerts with icons to the left of the text and the close button to the right. Use the class <code
+                    class="class-highlight">icon-alerts</code> along with the classes <code
+                    class="class-highlight">alerts</code> and the preferred variant. 
+                    <br>
+                    These alerts have two child containers - one for the icon and alert text, and the other for the close button.<br>
+                    Use class  <code
+                    class="class-highlight">icon-text</code> in the first child and  <code
+                    class="class-highlight">close-btn</code> in the second child.
+                    <br><br>
                     Here are some alerts with icons:
                 </div>
                 <div class="component-showcase alert-icons">
-
                     <div class="alerts success-alert icon-alerts">
                         <div class="icon-text">
                             <span class="alert-icons material-icons md-18 material-icons-outlined">
                                 check_circle
                             </span>
-
                             This is a success alert!
                         </div>
                         <div class="close-alert-icon">
-                            <button class="close-btn"><span
+                            <button class="close-btn">
+                                <span
                                     class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
-                                </span></button>
+                                </span>
+                            </button>
                         </div>
                     </div>
-
-
                     <div class="alerts warning-alert icon-alerts">
                         <div class="icon-text">
                             <span class="alert-icons material-icons md-18 material-icons-outlined">
@@ -100,15 +157,14 @@
                             This is a warning alert!
                         </div>
                         <div class="close-alert-icon">
-                            <button class="close-btn"><span
+                            <button class="close-btn">
+                                <span
                                     class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
                         </div>
                     </div>
-
-
                     <div class="alerts danger-alert icon-alerts">
                         <div class="icon-text">
                             <span class="alert-icons material-icons md-18 material-icons-outlined">
@@ -116,48 +172,138 @@
                             </span>
                             This is a simple danger alert!
                         </div>
-
                         <div class="close-alert-icon">
-                            <button class="close-btn"><span
+                            <button class="close-btn">
+                                <span
                                     class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
-                                </span></button>
+                                </span>
+                            </button>
                         </div>
                     </div>
-
-
                     <div class="alerts primary-alert-link icon-alerts">
                         <div class="icon-text">
                             A primary alert with an <a href="#">example link</a>
                         </div>
                         <div class="close-alert-icon">
-                            <button class="close-btn"><span
+                            <button class="close-btn">
+                                <span
                                     class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
-                                </span></button>
+                                </span>
+                            </button>
                         </div>
                     </div>
-
-
                     <div class="alerts secondary-alert-link icon-alerts">
                         <div class="icon-text">
                             A secondary alert with an <a href="#">example link</a>
                         </div>
                         <div class="close-alert-icon">
-                            <button class="close-btn"><span
+                            <button class="close-btn">
+                                <span
                                     class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
-                                </span></button>
+                                </span>
+                            </button>
                         </div>
                     </div>
-
-
                 </div>
+
+<pre><code class="code-snippet">
+<div class="alerts success-alert icon-alerts">
+    <div class="icon-text">
+        <span class="alert-icons material-icons md-18 material-icons-outlined">
+            check_circle
+        </span>
+        This is a success alert!
+    </div>
+    <div class="close-alert-icon">
+        <button class="close-btn">
+            <span
+                class="alert-icons material-icons md-18 material-icons-outlined">
+                close
+            </span>
+        </button>
+    </div>
+</div>
+
+<div class="alerts warning-alert icon-alerts">
+    <div class="icon-text">
+        <span class="alert-icons material-icons md-18 material-icons-outlined">
+            error_outline
+        </span>
+        This is a warning alert!
+    </div>
+    <div class="close-alert-icon">
+        <button class="close-btn">
+            <span
+                class="alert-icons material-icons md-18 material-icons-outlined">
+                close
+            </span>
+        </button>
+    </div>
+</div>
+
+<div class="alerts danger-alert icon-alerts">
+    <div class="icon-text">
+        <span class="alert-icons material-icons md-18 material-icons-outlined">
+            report_problem
+        </span>
+        This is a simple danger alert!
+    </div>
+    <div class="close-alert-icon">
+        <button class="close-btn">
+            <span
+                class="alert-icons material-icons md-18 material-icons-outlined">
+                close
+            </span>
+        </button>
+    </div>
+</div>
+
+<div class="alerts primary-alert-link icon-alerts">
+    <div class="icon-text">
+        A primary alert with an <a href="#">example link</a>
+    </div>
+    <div class="close-alert-icon">
+        <button class="close-btn">
+            <span
+                class="alert-icons material-icons md-18 material-icons-outlined">
+                close
+            </span>
+        </button>
+    </div>
+</div>
+
+<div class="alerts secondary-alert-link icon-alerts">
+    <div class="icon-text">
+        A secondary alert with an <a href="#">example link</a>
+    </div>
+    <div class="close-alert-icon">
+        <button class="close-btn">
+            <span
+                class="alert-icons material-icons md-18 material-icons-outlined">
+                close
+            </span>
+        </button>
+    </div>
+</div>
+</code></pre>
+                    
             </div>
 
 
         </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>

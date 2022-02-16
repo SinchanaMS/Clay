@@ -3,4 +3,5 @@
 @import "./documentation.css";
 @import "./colors.css";
 @import "./reset.css";
-@import "./typography.css"
+@import "./typography.css";
+@import "/main.css"

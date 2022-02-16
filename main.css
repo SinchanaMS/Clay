@@ -1,2 +1,82 @@
-@import "./stylesheets/index.css"
-/* CSS of the landing page */
+@import "./stylesheets/index.css";
+
+/* goes in colors.css */
+:root{
+    --cover-primary: #92543e;
+    --cover-secondary: #f0d9d7;
+    --cover-primary-hover: #743017;
+    --cover-secondary-hover: #e2cbc9;
+}
+
+/* stays in main.css */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    background: url(/assets/clay-cover.png);
+    background-size: cover;
+}
+
+.hero-text {
+    position: fixed;
+    top: 10rem;
+    left: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 40%;
+    letter-spacing: 3px;
+    line-height: normal;
+}
+
+.hero-title {
+    letter-spacing: 3px;
+    line-height: normal;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.hero-description {
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+.cover-actions {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.cover-action-btn {
+    border: none;
+    border-radius: 7px;
+    padding: 7px 15px;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+.cover-action-btn:nth-child(1) {
+    background: var(--cover-primary);
+    color: var(--primary-text)
+}
+
+.cover-action-btn:nth-child(1):hover {
+    background: var(--cover-primary-hover);
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.cover-action-btn:nth-child(2) {
+    background: var(--cover-secondary);
+    border: 2px solid var(--cover-primary);
+}
+
+.cover-action-btn:nth-child(2):hover {
+    background: var(--cover-secondary-hover);
+    color: var(--secondary-text);
+    cursor: pointer;
+}

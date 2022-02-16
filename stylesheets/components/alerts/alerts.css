@@ -47,6 +47,9 @@
     gap: 10px;
 }
 
+.primary-alert-link .close-btn{
+    color: var(--primary-text)
+}
 .close-btn {
     display: flex;
     background: none;
@@ -54,7 +57,5 @@
 }
 
 .close-btn:hover {
-    outline: 1px solid var(--warning-text);
-    border-radius: 50%;
     cursor: pointer;
 }
