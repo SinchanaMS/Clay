@@ -11,79 +11,129 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
+
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
-        <section class="content avatar-section">
-            <div class="component-wrapper general-avatars">
-                <h1 class="wrapper-heading avatar-heading">Avatars</h1>
+        <section class="content">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Avatars</h1>
                 <hr>
-                <div class="description wrapper-description avatar-description">
-                    Avatars are user profile pictures, usually found in circular shapes. Avatars can be used for
-                    'container' objects — projects, spaces, repositories — to give them a recognisable visual
-                    identity.
+                <div class="description">
+                    Avatars are user profile pictures, usually found in circular shapes. We have sized avatars,
+                    squared/circular avatars, and avatars with borders.
                 </div>
             </div>
 
             <div class="component-wrapper sized-avatars">
-                <h1 class="wrapper-heading avatar-heading">Sized Avatars</h1>
+                <h1 class="wrapper-heading">Sized Avatars</h1>
                 <hr>
-                <div class="description wrapper-description avatar-description">
-                    There are 3 sizes available for the avatars - small, medium and large. Add class "avatar-sm",
-                    "avatar-md" or "avatar-lg" depending on the requirement.
+                <div class="description">
+                    There are 3 sizes available for the avatars - small, medium and large. Use the class <code
+                        class="class-highlight">avatar-sm</code>,
+                    <code class="class-highlight">avatar-md</code> or <code class="class-highlight">avatar-lg</code>
+                    depending on the requirement.
                 </div>
 
-                <div class="component-showcase avatar  avatar-size">
+                <div class="component-showcase">
                     <img src="/assets/dp.jpg" alt="small avatar" class="avatar-sm">
                     <img src="/assets/dp.jpg" alt="medium avatar" class="avatar-md">
                     <img src="/assets/dp.jpg" alt="large avatar" class="avatar-lg">
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add  class="avatar-sm", "avatar-md" or "avatar-lg"-->
+<img src="source path" class="avatar-sm" alt="small avatar">
+</code></pre>
+
             </div>
 
             <div class="component-wrapper squared-avatars">
-                <h1 class="wrapper-heading avatar-heading">Squared Avatars</h1>
+                <h1 class="wrapper-heading">Squared Avatars</h1>
                 <hr>
                 <div class="description wrapper-description avatar-description">
-                    Avatars can also have squared corners. Add a class "squared" to get the below results along with the
-                    preferred size.
+                    Avatars can have squared corners. Add a class <code class="class-highlight">squared</code> to get
+                    the below results along with the preferred size.
                 </div>
-                <div class="component-showcase avatar avatar-squared">
+                <div class="component-showcase">
                     <img src="/assets/dp.jpg" alt="small avatar" class="avatar-sm squared">
                     <img src="/assets/dp.jpg" alt="medium avatar" class="avatar-md squared">
                     <img src="/assets/dp.jpg" alt="large avatar" class="avatar-lg squared">
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add  class="squared" with "avatar-sm", "avatar-md" or "avatar-lg"-->             
+<img src="source path" class="avatar-md squared" alt="medium avatar - squared" >
+</code></pre>
+
             </div>
 
             <div class="component-wrapper bordered-avatars">
-                <h1 class="wrapper-heading avatar-heading">Bordered Avatars</h1>
+                <h1 class="wrapper-heading">Bordered Avatars</h1>
                 <hr>
-                <div class="description wrapper-description avatar-description">
-                    Avatars can have borders. Add a class "bordered" to get the below results along with
+                <div class="description">
+                    For bordered avatars, add a class <code class="class-highlight">bordered</code> to get the below
+                    results along with
                     the preferred size and shape.
+                    <br>
+                    We have three colors available - <code class="class-highlight">border-red</code>, <code
+                        class="class-highlight">border-green</code> and <code
+                        class="class-highlight">border-grey</code>.
                 </div>
-                <div class="component-showcase avatar avatar-bordered">
+                <div class="component-showcase">
                     <img src="/assets/dp.jpg" alt="small avatar" class="avatar-md squared bordered border-red">
                     <img src="/assets/dp.jpg" alt="medium avatar" class="avatar-md squared bordered border-green">
                     <img src="/assets/dp.jpg" alt="large avatar" class="avatar-lg bordered border-grey">
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add  class="bordered" with "border-red", "border-green" or "border-grey"--> 
+<img src="source path" class="bordered border-grey" alt="large avatar - bordered">
+</code></pre>
+
             </div>
         </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>
