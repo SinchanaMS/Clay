@@ -11,23 +11,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
 
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
         <section class="content buttons-section">
@@ -45,7 +61,7 @@
                 <h1 class="wrapper-heading">Buttons - Variants</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    There are 3 variants - default, rounded and curved corners. Use class - "btn", "rounded-btn", or "curved-btn" for the preferred variant.
+                    There are 3 button variants - default, rounded and curved corners. Use the class <code class="class-highlight">btn</code>, <code class="class-highlight">rounded-btn</code>, or <code class="class-highlight">curved-btn</code> for the preferred variant.
                 </div>
                 <div class="component-showcase">
                     <button class="btn">
@@ -60,6 +76,13 @@
                         Curved
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "btn", "rounded-btn" or "curved-btn" -->
+<button class="rounded-btn ">
+    Rounded
+</button>
+</code></pre>
             </div>
 
             <div class="component-wrapper pri-btns-wrapper">
@@ -67,7 +90,7 @@
                 <hr>
                 <div class="description wrapper-description">
                     Primary buttons provide extra visual weight and identify the primary action in a set of buttons.
-                    Use class "pri-btn" for primary buttons along with the preferred button variant.
+                    Use class <code class="class-highlight">pri-btn</code> for primary buttons along with the preferred button variant.
                 </div>
                 <div class="component-showcase">
                     <button class="btn pri-btn">
@@ -82,13 +105,20 @@
                         Disabled
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "pri-btn" along with the button variant -->
+<button class="btn pri-btn">
+    Default
+</button>
+</code></pre>
             </div>
 
             <div class="component-wrapper sec-btns-wrapper">
                 <h1 class="wrapper-heading">Secondary Buttons</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Use class "sec-btn" for secondary buttons along with the preferred button variant.
+                    Use class <code class="class-highlight">sec-btn</code> for secondary buttons along with the preferred button variant.
                 </div>
                 <div class="component-showcase">
                     <button class="rounded-btn sec-btn">
@@ -103,13 +133,22 @@
                         Disabled
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "sec-btn" along with the button variant -->
+<button class="rounded-btn sec-btn">
+    Default
+</button>
+</code></pre>
             </div>
 
             <div class="component-wrapper link-buttons-wrapper">
                 <h1 class="wrapper-heading">Link Button</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Here are examples of buttons with a link that take you to a different page on click. Use class "link-btn" for these buttons. There are 2 variants in addition to the default - "link-btn-outline" and "link-border-bottom". 
+                    Here are examples of buttons with a link that take you to a different page on click. Use class <code class="class-highlight">link-btn</code> for these buttons. 
+                    <br>There are 2 variants in addition to the default - 
+                    <code class="class-highlight">link-btn-outline</code> and <code class="class-highlight">link-border-bottom</code>.
                 </div>
 
                 <div class="component-showcase">
@@ -117,14 +156,21 @@
                         <a href="#" class="link-in-btn">Edit Profile</a>
                     </button>
 
-                    <button class="curved-btn link-btn-outline link-btn">
+                    <button class="curved-btn link-btn-outline">
                         <a href="#" class="link-in-btn">Create Account</a>
                     </button>
 
-                    <button class="btn link-border-bottom link-btn">
+                    <button class="btn link-border-bottom">
                         <a href="#" class="link-in-btn">Sign in</a>
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "link-btn", "link-btn-outline" or "link-border-bottom" -->
+<button class="curved-btn link-btn-outline">
+    <a href="#" class="link-in-btn">Create Account</a>
+</button>
+</code></pre>
             </div>
 
 
@@ -132,8 +178,9 @@
                 <h1 class="wrapper-heading">Icon Buttons</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    For buttons with icons, use class "icon-btn". Here are examples of buttons with an icon. 
-                    You may use classes "icon-pri" for primary, "icon-light" or "icon-dark" for the light and dark variants.
+                    For buttons with icons, use class <code class="class-highlight">icon-btn</code>. 
+                    You may use classes <code class="class-highlight">icon-pri</code> for primary, <code class="class-highlight">icon-light</code> or <code class="class-highlight">icon-dark</code>for the light and dark
+                    variants.
                 </div>
 
                 <div class="component-showcase">
@@ -156,6 +203,15 @@
                         </span> Watch Later
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "icon-btn", along with the preferred variant -->
+<button class="icon-btn curved-btn icon-dark">
+    <span class="material-icons md-18 material-icons-outlined">
+        watch_later
+    </span> Watch Later
+</button>
+</code></pre>
             </div>
 
             <div class="component-wrapper fab-wrapper">
@@ -163,20 +219,21 @@
                 <hr>
                 <div class="description wrapper-description">
                     Floating Action Button (FAB), shaped like a circled
-                    icon floating above the UI, is a tool that allows users to call out the key parts of your app. Use class "fab-default", "fab-extended" or "fab-squircle" for the preferred shapes along with the class "fab" to get the below floating action buttons.
+                    icon floating above the UI, is a tool that allows users to call out the key parts of your app. Use
+                    class <code class="class-highlight">fab-default</code>, <code class="class-highlight">fab-extended</code>, or <code class="class-highlight">fab-squircle</code> for the preferred shapes along with the class <code class="class-highlight">fab</code> to get the below floating action buttons.
                 </div>
 
                 <div class="component-showcase">
                     <button class="fab fab-default">
                         <span class="material-icons md-18 material-icons-outlined">
                             edit
-                            </span>
+                        </span>
                     </button>
 
                     <button class="fab fab-extended">
                         <span class="material-icons md-18 material-icons-outlined">
                             add
-                            </span>
+                        </span>
                         <p class="fab-ext-text">Add Item</p>
                     </button>
 
@@ -186,9 +243,28 @@
                         </span>
                     </button>
                 </div>
+
+<pre><code class="code-snippet">
+<!-- add the class "fab", along with the preferred shape variant -->
+<button class="fab fab-extended">
+    <span class="material-icons md-18 material-icons-outlined">
+        add
+    </span>
+    <p class="fab-ext-text">Add Item</p>
+</button>
+</code></pre>
             </div>
         </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>
