@@ -11,29 +11,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
+
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
-        <section class="content avatar-section">
+        <section class="content">
             <div class="component-wrapper">
                 <h1 class="wrapper-heading">Images</h1>
                 <hr>
-                <div class="description wrapper-description">
+                <div class="description">
                     These components are used to display images on websites. They can be made responsive and come in
                     different shapes and sizes as shown below.
                 </div>
@@ -42,10 +59,12 @@
             <div class="component-wrapper responsive-images-wrapper">
                 <h1 class="wrapper-heading">Responsive Images</h1>
                 <hr>
-                <div class="description wrapper-description">
+                <div class="description">
                     Images can be made responsive - they expand upto the width of the container they are in. Use the
-                    class "img-responsive" in the parent container. There are two variants - circular and squared. Use
-                    classes "round-img" or "squared-img" as per requirement.
+                    class <code class="class-highlight">img-responsive</code> in the parent container. There are two
+                    variants - circular and squared. Use
+                    classes <code class="class-highlight">round-img</code> or <code
+                        class="class-highlight">squared-img</code> as per requirement.
                 </div>
 
                 <div class="component-showcase-col">
@@ -59,16 +78,25 @@
                             alt="responsive image - squared">
                     </div>
                 </div>
+                <br>
+                <pre><code class="code-snippet">
+<!-- add class="responsive-img" along with the preferred shape-->
+<div class="img-responsive squared-img">
+    <img src="source path" alt="responsive image - squared">
+</div>
+</code></pre>
+
             </div>
 
             <div class="component-wrapper squared-images-wrapper">
                 <h1 class="wrapper-heading">Squared Images</h1>
                 <hr>
-                <div class="description wrapper-description">
-                    Images can be square-shaped using class "sq-img" in your HTML code. Use the classes "small",
-                    "medium" and "large" for the preferred sizes.
+                <div class="description">
+                    Images can be square-shaped using class <code class="class-highlight">sq-img</code> along with the
+                    preferred sizes - <code class="class-highlight">small</code>, <code
+                        class="class-highlight">medium</code> or <code class="class-highlight">large</code>.
                 </div>
-                <div class="component-showcase sq-img-showcase">
+                <div class="component-showcase">
                     <img src="https://images.unsplash.com/photo-1637152630314-9e73782b9cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                         alt="" class="sq-img small">
                     <img src="https://images.unsplash.com/photo-1642425961085-43765c1ec217?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -76,14 +104,20 @@
                     <img src="https://images.unsplash.com/photo-1501660034796-9860da6cb741?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxvcmFuZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                         alt="" class="sq-img large">
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add class="sq-img" along with the preferred size-->
+<img src="source path" class="sq-img small" alt="squared images" >
+</code></pre>
             </div>
 
             <div class="component-wrapper rd-img-wrapper">
                 <h1 class="wrapper-heading">Circular Images</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Images can be circular-shaped. Use class "img-round" along with the preferred sizes - "small",
-                    "medium" or "large".
+                    Images can be circular-shaped. Add the class <code class="class-highlight">img-round</code> along
+                    with the preferred sizes - <code class="class-highlight">small</code>, <code
+                        class="class-highlight">medium</code> or <code class="class-highlight">large</code>.
                 </div>
                 <div class="component-showcase rd-img-showcase">
                     <img src="https://images.unsplash.com/photo-1532191343016-47bf741b8b3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
@@ -93,9 +127,23 @@
                     <img src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="large avatar" class="img-round large">
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add class="img-round" along with the preferred size-->
+<img src="source path" class="img-round small" alt="small avatar">
+</code></pre>
             </div>
         </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>

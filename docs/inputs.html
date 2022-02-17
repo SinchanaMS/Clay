@@ -11,31 +11,47 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
 
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
-        <section class="content inputs-section">
+        <section class="content">
 
             <div class="component-wrapper">
                 <h1 class="wrapper-heading">Inputs</h1>
                 <hr>
-                <div class="description wrapper-description">
+                <div class="description">
                     Any information from a user is taken as an input. These components help with a user's interaction
                     with the website. Below are the types of inputs available.
                 </div>
@@ -45,11 +61,14 @@
                 <h1 class="wrapper-heading">Text box</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    A textbox can be used for multi-line input. Use class "textbox" to use this component.
+                    A textbox can be used for multi-line input. Use the class <code
+                        class="class-highlight">textbox</code> to use this component.
                     <br>
-                    You may keep the default shape or use class "textbox-curved" for curved corners.
+                    You may keep the default shape or use class <code class="class-highlight">textbox-curved</code> for
+                    curved corners.
                     <br>
-                    Use class "resize" if you wish to keep the resizing of the text box on. By default it is set to
+                    Use class <code class="class-highlight">resize</code> if you wish to keep the resizing of the text
+                    box on. By default it is set to
                     non-resizable.
                 </div>
                 <div class="component-showcase">
@@ -59,17 +78,24 @@
                     <textarea class="textbox textbox-curved" type="number" rows="5" cols="40"
                         placeholder="Enter your message here..."></textarea>
                 </div>
+                <pre><code class="code-snippet">
+<!-- add class="textbox" along with the preferred shape
+add class="resize" to enable resizing of the textbox-->
+<textarea class="textbox textbox-curved resize"></textarea>
+</code></pre>
             </div>
 
             <div class="component-wrapper labelled-inputs-wrapper">
                 <h1 class="wrapper-heading">Labelled Inputs</h1>
                 <hr>
-                <div class="description wrapper-description">
-                    Labelled Input has a label to the input field. Use class "labelled-input" in the
-                    parent container. "label-left" positions the label to the left of the input box and "label-top" positions the label at the top of the input box.
+                <div class="description">
+                    Labelled Input has a label to the input field. Use the class <code
+                        class="class-highlight">labelled-input</code> in the
+                    parent container. <code class="class-highlight">label-left</code> positions the label to the left of
+                    the input box and <code class="class-highlight">label-top</code>
+                    positions the label at the top of the input box.
                 </div>
                 <div class="component-showcase-col">
-
                     <div class="labelled-input label-top">
                         <label class="label"> Last Name</label>
                         <input type="text">
@@ -80,15 +106,25 @@
                         <input type="text">
                     </div>
                 </div>
+                <br>
+                <pre><code class="code-snippet">
+<!-- add class="labelled-input" along with the preferred position-->
+<div class="labelled-input label-top">
+    <label class="label"> Last Name</label>
+    <input type="text">
+</div>
+</code></pre>
             </div>
 
             <div class="component-wrapper validation-inputs-wrapper">
                 <h1 class="wrapper-heading">Validation Inputs</h1>
                 <hr>
-                <div class="description wrapper-description">
+                <div class="description">
                     The below input styles can be used to validate the user input and display messages accordingly.
                     <br>
-                    Use class "val-success", "val-warn" or "val-error" for success message, warning or error message
+                    Use the class <code class="class-highlight">val-success</code>, <code
+                        class="class-highlight">val-warn</code> or <code class="class-highlight">val-error</code> for
+                    success message, warning or error message
                     respectively in the parent container.
                 </div>
                 <div class="component-showcase-col">
@@ -108,13 +144,23 @@
                         <div class="val-msg">Incorrect password. 2 attempts remaining.</div>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add class="val-success", "val-success" or "val-success"-->
+<div class="val-input val-error label-top">
+    <label class="label"> Password *</label>
+    <input type="text">
+    <div class="val-msg">Incorrect password. 2 attempts remaining.</div>
+</div>
+</code></pre>
             </div>
 
             <div class="component-wrapper radio-btns-wrapper">
                 <h1 class="wrapper-heading">Radio Buttons</h1>
                 <hr>
-                <div class="description wrapper-description">
-                    Radio buttons help the user select one out of the many options at once.
+                <div class="description">
+                    Radio buttons help the user select one out of the many options at once. Use the class <code
+                        class="class-highlight">radio-btn</code> in the container.
                 </div>
                 <div class="component-showcase">
                     <div class="radio-btn">
@@ -130,13 +176,21 @@
                         <label class="label"> Disabled</label>
                     </div>
                 </div>
+                <pre><code class="code-snippet">
+<!-- add class="val-success", "val-success" or "val-success"-->
+<div class="radio-btn">
+    <input type="radio" name="radio-btn">
+    <label class="label">Checked</label>
+</div>
+</code></pre>
             </div>
 
             <div class="component-wrapper checkbox-wrapper">
                 <h1 class="wrapper-heading">Checkboxes</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Checkboxes are used to select multiple options at once.
+                    Checkboxes are used to select multiple options at once. Use the class <code
+                        class="class-highlight">checkbox-btn</code> in the container.
                 </div>
                 <div class="component-showcase">
                     <div class="checkbox-btn">
@@ -152,11 +206,26 @@
                         <label class="label"> Disabled</label>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add class="val-success", "val-success" or "val-success"-->
+<div class="checkbox-btn">
+    <input type="checkbox" name="checkbox">
+    <label class="label">Checked</label>
+</div>
+</code></pre>
             </div>
-
         </section>
-
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>
