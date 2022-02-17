@@ -63,9 +63,8 @@
                 <div class="description">
                     These are alerts without any icons, they only hold the text.
                     <br>
-                    Use the class <code
-                        class="class-highlight">alerts</code> along with the variant class as preferred - <code
-                        class="class-highlight">success-alert</code>, <code
+                    Use the class <code class="class-highlight">alerts</code> along with the variant class as preferred
+                    - <code class="class-highlight">success-alert</code>, <code
                         class="class-highlight">warning-alert</code>, <code class="class-highlight">danger-alert</code>,
                     <code class="class-highlight">primary-alert-link</code> or <code
                         class="class-highlight">secondary-alert-link</code>.
@@ -93,25 +92,11 @@
                     </div>
                 </div>
 
-<pre><code class="code-snippet">
+                <pre><code class="code-snippet">
+<!-- add class="alerts" along with "success-alert", "warning-alert", "danger-alert", 
+"primary-alert-link", or "secondary-alert-link"-->
 <div class="alerts success-alert">
     This is a simple success alert!
-</div>
-
-<div class="alerts warning-alert">
-    This is a simple warning alert!
-</div>
-
-<div class="alerts danger-alert">
-    This is a simple danger alert!
-</div>
-
-<div class="alerts  primary-alert-link">
-    A simple primary alert with an <a href="#">insert link here</a>.
-</div>
-
-<div class="alerts  secondary-alert-link">
-    A simple secondary alert with an <a href="#">insert link here</a>.
 </div>
 </code></pre>
 
@@ -121,14 +106,14 @@
                 <h1 class="wrapper-heading">Alerts with Icons</h1>
                 <hr>
                 <div class="description">
-                    Alerts with icons to the left of the text and the close button to the right. Use the class <code
-                    class="class-highlight">icon-alerts</code> along with the classes <code
-                    class="class-highlight">alerts</code> and the preferred variant. 
+                    These are alerts with message icons and a dismiss button. Use the class <code
+                        class="class-highlight">icon-alerts</code> along with the classes <code
+                        class="class-highlight">alerts</code> and the preferred variant.
                     <br>
-                    These alerts have two child containers - one for the icon and alert text, and the other for the close button.<br>
-                    Use class  <code
-                    class="class-highlight">icon-text</code> in the first child and  <code
-                    class="class-highlight">close-btn</code> in the second child.
+                    These alerts have two child containers - one for the icon and alert message, and the other for the
+                    dismiss button.<br>
+                    Use class <code class="class-highlight">icon-text</code> in the first child and <code
+                        class="class-highlight">close-btn</code> in the second child.
                     <br><br>
                     Here are some alerts with icons:
                 </div>
@@ -142,8 +127,7 @@
                         </div>
                         <div class="close-alert-icon">
                             <button class="close-btn">
-                                <span
-                                    class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -158,8 +142,7 @@
                         </div>
                         <div class="close-alert-icon">
                             <button class="close-btn">
-                                <span
-                                    class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -174,8 +157,7 @@
                         </div>
                         <div class="close-alert-icon">
                             <button class="close-btn">
-                                <span
-                                    class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -187,8 +169,7 @@
                         </div>
                         <div class="close-alert-icon">
                             <button class="close-btn">
-                                <span
-                                    class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -200,8 +181,7 @@
                         </div>
                         <div class="close-alert-icon">
                             <button class="close-btn">
-                                <span
-                                    class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="alert-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -209,23 +189,10 @@
                     </div>
                 </div>
 
-<pre><code class="code-snippet">
-<div class="alerts success-alert icon-alerts">
-    <div class="icon-text">
-        <span class="alert-icons material-icons md-18 material-icons-outlined">
-            check_circle
-        </span>
-        This is a success alert!
-    </div>
-    <div class="close-alert-icon">
-        <button class="close-btn">
-            <span
-                class="alert-icons material-icons md-18 material-icons-outlined">
-                close
-            </span>
-        </button>
-    </div>
-</div>
+                <pre><code class="code-snippet">
+<!-- add class="icon-alerts" along with "alerts" and the required variant class.
+add class="icon-text" in the first child container
+add class="close-btn" in the second child container-->
 
 <div class="alerts warning-alert icon-alerts">
     <div class="icon-text">
@@ -244,52 +211,8 @@
     </div>
 </div>
 
-<div class="alerts danger-alert icon-alerts">
-    <div class="icon-text">
-        <span class="alert-icons material-icons md-18 material-icons-outlined">
-            report_problem
-        </span>
-        This is a simple danger alert!
-    </div>
-    <div class="close-alert-icon">
-        <button class="close-btn">
-            <span
-                class="alert-icons material-icons md-18 material-icons-outlined">
-                close
-            </span>
-        </button>
-    </div>
-</div>
-
-<div class="alerts primary-alert-link icon-alerts">
-    <div class="icon-text">
-        A primary alert with an <a href="#">example link</a>
-    </div>
-    <div class="close-alert-icon">
-        <button class="close-btn">
-            <span
-                class="alert-icons material-icons md-18 material-icons-outlined">
-                close
-            </span>
-        </button>
-    </div>
-</div>
-
-<div class="alerts secondary-alert-link icon-alerts">
-    <div class="icon-text">
-        A secondary alert with an <a href="#">example link</a>
-    </div>
-    <div class="close-alert-icon">
-        <button class="close-btn">
-            <span
-                class="alert-icons material-icons md-18 material-icons-outlined">
-                close
-            </span>
-        </button>
-    </div>
-</div>
 </code></pre>
-                    
+
             </div>
 
 
