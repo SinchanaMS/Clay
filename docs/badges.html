@@ -11,45 +11,72 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
 
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
         <section class="content badges-section">
 
-            <div class="component-wrapper general-badges">
-                <h1 class="wrapper-heading badges-heading">Badges</h1>
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Badges</h1>
                 <hr>
-                <div class="description wrapper-description badges-description">
+                <div class="description">
                     Badges are small circles, positioned either at the top-right or bottom-right of the parent
-                    component.
-                    They
-                    can be used to display notifications, updates, and users' status depending on where they are used.
+                    component. They can be used to display notifications, updates, and users' status depending on where
+                    they are used.
+                    <br><br>
+                    The badges are in gold by default. However, they come in 3 additional colors:
+                    <ul>
+                        <li><code class="class-highlight">grey-badge</code></li>
+                        <li><code class="class-highlight">red-badge</code></li>
+                        <li><code class="class-highlight">green-badge</code></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="component-wrapper badges-on-icons">
-                <h1 class="wrapper-heading badges-heading">Badges on Icons</h1>
+                <h1 class="wrapper-heading">Badges on Icons</h1>
                 <hr>
-                <div class="description wrapper-description badges-on-icons-description">
-                    Here are some examples of badges on icons:
+                <div class="description">
+                    These are badges used on icons - typically used to display the number of notifications or updates.
+                    Add the class <code class="class-highlight">badge-icon-container</code> in the parent container and
+                    <code class="class-highlight">badge</code> in the badge element. You may additionally use the class
+                    <code class="class-highlight"> badge-text</code> in case the text is required within the badge.
+                    <br><br>
+                    Here are some examples:
                 </div>
-                <div class="component-showcase icon-with-badge">
+                <div class="component-showcase">
                     <div class="badge-icon-container">
                         <span class="material-icons md-36 material-icons-outlined">
                             shopping_cart
@@ -61,32 +88,57 @@
                         <span class="material-icons md-36 material-icons-outlined">
                             whatsapp
                         </span>
-                        <div class="badge badge-text">28</div>
+                        <div class="badge badge-text grey-badge">28</div>
                     </div>
 
                     <div class="badge-icon-container">
                         <span class="material-icons md-36 material-icons-outlined">
                             mail
                         </span>
-                        <div class="badge badge-text">4</div>
+                        <div class="badge badge-text red-badge">4</div>
                     </div>
 
                     <div class="badge-icon-container">
                         <span class="material-icons md-36 material-icons-outlined">
                             message
                         </span>
-                        <div class="green-badge badge"></div>
+                        <div class="badge green-badge"></div>
                     </div>
-
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "badge-icon-container" in the parent container 
+and "badge" in the badge element 
+use "badge-text" for badges with text -->
+
+<div class="badge-icon-container">
+    <span class="material-icons md-36 material-icons-outlined">
+        mail
+    </span>
+    <div class="badge badge-text red-badge">badge text</div>
+</div>
+
+</code></pre>
             </div>
 
             <div class="component-wrapper badges-on-avatars">
-                <h1 class="wrapper-heading badges-heading">Badges on Avatars</h1>
+                <h1 class="wrapper-heading">Badges on Avatars</h1>
                 <hr>
-                <div class="description wrapper-description badges-on-avatars-description">
-                    Here are some examples of badges on avatars that show the status of the user: offline, online, and
-                    busy:
+                <div class="description">
+                    Badges on avatars indicate the online status of the user: offline, online, idle or busy.
+                    <br><br>Use the classes as mentioned below:
+                    <br>
+                    In the parent container, use the class <code class="class-highlight">avatar-badge-container</code>.
+                    <br>
+                    In the avatar element, add the class <code class="class-highlight">avatar</code> along with the
+                    preferred size: <code class="class-highlight">avatar-sm</code>, <code
+                        class="class-highlight">avatar-md</code> or <code class="class-highlight">avatar-lg</code>.
+                    <br>
+                    For the badge on avatar, along with the class<code class="class-highlight">badge</code>, use <code
+                        class="class-highlight">av-badge</code>.
+                    <br>There are 3 badge sizes you can opt out of - <code class="class-highlight">av-sm-badge</code>,
+                    <code class="class-highlight">av-md-badge</code>, <code class="class-highlight">av-lg-badge</code>.
+                    Please ensure these are corresponding to the avatar size used for best results.
                 </div>
 
                 <div class="component-showcase avatar-with-badge">
@@ -101,16 +153,39 @@
                     </div>
 
                     <div class="avatar-badge-container">
+                        <img src="/assets/dp.jpg" alt="small avatar" class="avatar avatar-md" />
+                        <div class="badge av-badge av-md-badge"></div>
+                    </div>
+
+                    <div class="avatar-badge-container">
                         <img src="/assets/dp.jpg" alt="small avatar" class="avatar avatar-lg" />
-                        <div class="badge av-badge av-lg-badge"></div>
+                        <div class="badge av-badge av-lg-badge red-badge"></div>
                     </div>
 
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "avatar-badge-container" in the parent container 
+add classes "badge" and "av-badge" in the badge element with the
+preferred color and size-->
+
+<div class="avatar-badge-container">
+    <img src="/assets/dp.jpg" alt="small avatar" class="avatar avatar-lg" />
+    <div class="badge av-badge av-lg-badge red-badge"></div>
+</div>
+</code></pre>
             </div>
-
         </section>
-
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
 </body>
 
 </html>

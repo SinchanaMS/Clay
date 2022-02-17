@@ -1,5 +1,6 @@
 @import "/stylesheets/index.css";
 @import "/stylesheets/components/avatars/avatars.css";
+@import "/stylesheets/components/cards/cards.css";
 
 
 .badge-icon-container {
@@ -7,15 +8,15 @@
 }
 
 .badge {
-    background: var(--badge-default-bg);
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
-    color: var(--badge-default-text);
     text-align: center;
     position: absolute;
     top: -5px;
     right: -6px;
+    background: var(--card-badge-def);
+    color: var(--secondary-text);
 }
 
 .badge-text {
@@ -51,8 +52,14 @@
     top: 3.25rem;
 }
 
+.red-badge{
+    background: var(--badge-default-bg);
+    color: var(--badge-default-text);
+}
+
 .grey-badge {
     background: var(--default-grey);
+    color: var(--primary-text);
 }
 
 .green-badge {
