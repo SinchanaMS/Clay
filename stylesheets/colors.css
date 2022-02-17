@@ -24,6 +24,10 @@
     --default-green: #6ab91b;
     --default-grey: #969494;
 
+    --card-badge-def: #ffd700;
+    --card-bg: #f1f5f9;
+    --shadow-grey: #6161612e;
+
     --sized-avatars-section: #f8ebe7;
     --squared-avatars-section: #f7f0e2;
     --bordered-avatars-section: #f5ede7;
@@ -79,4 +83,13 @@
     --paragraphs-section: #f1ebeb;
     --text-alignment-section: #eeebeb;
     --text-utils-demo-bg: #ffffff;
+
+    --cards-w-badges-section: #eceaea;
+    --cards-w-dismiss-section: #ece6e4;
+    --cards-w-overlay-section: #f1eded;
+    --cards-text-only-section: #ebe1e1;
+    --cards-v-h-section: #ebdfd8;
+    --cards-with-shadow-section: #f1e9e7;
+
+    --ratings-section: #f5ebed;
 }

@@ -2,62 +2,6 @@
 @import "/stylesheets/components/badges/badges.css";
 @import "/stylesheets/components/text-utilities/text-utilities.css";
 
-/* goes in documentation.css */
-.cards-w-badges-wrapper {
-    background: #eceaea;
-}
-
-.cards-w-badges {
-    flex-wrap: wrap;
-}
-
-.cards-w-dismiss-wrapper {
-    background: #ece6e4;
-}
-
-.cards-w-overlay-wrapper {
-    background: #f1eded;
-}
-
-.cards-text-only-wrapper {
-    background: #ebe1e1;
-}
-
-.cards-v-h-wrapper {
-    background: #ebdfd8;
-}
-
-.cards-with-shadow-wrapper {
-    background: #f1e9e7;
-}
-
-.cards-v-h {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* goes in colors.css */
-:root {
-    --card-badge-def: #ffd700;
-    --card-bg: #f1f5f9;
-    --shadow-grey: #6161612e
-}
-
-.card-badge-def {
-    background: var(--card-badge-def);
-    color: var(--secondary-text);
-}
-
-.red-badge {
-    background-color: var(--default-red);
-    color: var(--primary-text);
-}
-
-.grey-badge {
-    color: var(--primary-text);
-}
-
-/* stays in cards.css */
 .card-container {
     position: relative;
     display: flex;
@@ -125,6 +69,20 @@
     top: 8px;
     left: auto;
     right: 2px;
+}
+
+.card-badge-def {
+    background: var(--card-badge-def);
+    color: var(--secondary-text);
+}
+
+.red-badge {
+    background-color: var(--default-red);
+    color: var(--primary-text);
+}
+
+.grey-badge {
+    color: var(--primary-text);
 }
 
 .dismiss-btn {
