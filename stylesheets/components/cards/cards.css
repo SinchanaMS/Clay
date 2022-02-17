@@ -3,37 +3,37 @@
 @import "/stylesheets/components/text-utilities/text-utilities.css";
 
 /* goes in documentation.css */
+.cards-w-badges-wrapper {
+    background: #eceaea;
+}
+
 .cards-w-badges {
-    background: #e7dbdb;
     flex-wrap: wrap;
-    padding: 3rem;
 }
 
-.cards-w-dismiss {
-    background: #e2d4ce;
-    padding: 3rem;
+.cards-w-dismiss-wrapper {
+    background: #ece6e4;
 }
 
-.cards-w-overlay {
-    background: #725b5b;
-    padding: 3rem;
+.cards-w-overlay-wrapper {
+    background: #f1eded;
 }
 
-.cards-text-only {
-    background: #e4cfcf;
-    padding: 3rem;
+.cards-text-only-wrapper {
+    background: #ebe1e1;
+}
+
+.cards-v-h-wrapper {
+    background: #ebdfd8;
+}
+
+.cards-with-shadow-wrapper {
+    background: #f1e9e7;
 }
 
 .cards-v-h {
     display: flex;
     flex-wrap: wrap;
-    background: #dfcfc4;
-    padding: 3rem;
-}
-
-.cards-w-shadow {
-    background: #f1e9e7;
-    padding: 3rem;
 }
 
 /* goes in colors.css */
@@ -132,6 +132,10 @@
     right: 5px;
     background: none;
     border: none;
+}
+
+.card-disabled {
+    outline: 1px solid var(--default-grey);
 }
 
 .card-disabled .card-header,

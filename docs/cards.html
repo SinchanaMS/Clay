@@ -19,17 +19,31 @@
 <body>
     <div class="documentation-section">
         <header class="doc-header">
-            <h1 class="header-title">Clay</h1>
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
         </header>
+
         <nav class="nav-bar">
-            <h1 class="nav-title">Components</h1>
-            <a href="/docs/avatars.html" class="nav-subtitles">Avatars</a>
-            <a href="/docs/alerts.html" class="nav-subtitles">Alerts</a>
-            <a href="/docs/badges.html" class="nav-subtitles">Badges</a>
-            <a href="/docs/buttons.html" class="nav-subtitles">Buttons</a>
-            <a href="/docs/cards.html" class="nav-subtitles">Cards</a>
-            <a href="/docs/images.html" class="nav-subtitles">Images</a>
-            <a href="/docs/inputs.html" class="nav-subtitles">Input</a>
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Input</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+            </ul>
         </nav>
 
         <section class="content">
@@ -40,34 +54,38 @@
                     A Card component resembles a playing card and contains short, related pieces of information. They
                     are used either to group information, present a summary or a link to additional details. Below are a
                     few types of available cards.
-                </div>
-            </div>
-
-            <div class="component-wrapper">
-                <h1 class="wrapper-heading">Cards with Badges</h1>
-                <hr>
-                <div class="description wrapper-description">
-                    Here are some examples of cards with badges.
-                    Use the class <code class="class-highlight">card-badge</code> in the badge element.
-                    <br>
-                    The badge can be positioned to the right of the card using class <code
-                        class="class-highlight">badge-right</code> in the badge element. By default it is set to the
-                    left.
                     <br><br>
-                    <p>The following colors are available:
-                        <ol>
+                    <p>The following colors are available for the badges:
+                        <ul>
                             <li>Red: <code class="class-highlight">red-badge</code></li>
                             <li>Default (gold): <code class="class-highlight">card-badge-def</code></li>
                             <li>Grey: <code class="class-highlight">grey-badge</code></li>
                             <li>Green: <code class="class-highlight">green-badge</code></li>
-                            </ul>
+                        </ul>
                     </p>
+                </div>
+            </div>
+
+            <div class="component-wrapper cards-w-badges-wrapper">
+                <h1 class="wrapper-heading">Cards with Badges</h1>
+                <hr>
+                <div class="description wrapper-description">
+                    Here are some examples of cards with badges.
+                    Use the class <code class="class-highlight">card-container</code> in the parent container and <code
+                        class="class-highlight">card-badge</code> in the badge element.
+                    <br>
+                    The badge can be positioned to the right of the card using class <code
+                        class="class-highlight">badge-right</code>. By default it is set to the
+                    left.
+                    <br><br>
+
                 </div>
                 <div class="component-showcase cards-w-badges">
                     <div class="card-container">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -85,7 +103,8 @@
                     <div class="card-container">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -103,7 +122,8 @@
                     <div class="card-container">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -119,24 +139,52 @@
                         </div>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "card-container" in the parent container,
+"card-badge" in the badge element
+optional: "badge-right"-->
+
+<div class="card-container">
+    <div class="card-child card-header">
+        <img class="card-img"
+            src="source path" alt="">
+        <h4 class="card-title">Title</h4>
+        <p class="card-subtitle p-sm">Subtitle</p>
+    </div>
+    <div class="card-badge badge-right">Out of Stock</div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc  p-sm">Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="discounted-price">Rs. 299</div>
+        <div class="actual-price p-sm">Rs. 499</div>
+        <div class="discount p-sm">60% OFF</div>
+    </div>
+</div>
+</code></pre>
+
             </div>
 
-            <div class="component-wrapper">
+            <div class="component-wrapper cards-w-dismiss-wrapper">
                 <h1 class="wrapper-heading">Cards with Dismiss</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Here is a Card that can be dismissed. Use class <code class="class-highlight">dismiss-btn</code> in
-                    the dismiss element within the card's container.
+                    Here is a Card that can be dismissed. Use class <code class="class-highlight">card-container</code>
+                    in the parent container, and <code class="class-highlight">dismiss-btn</code> in
+                    the dismiss element.
                 </div>
-                <div class="component-showcase cards-w-dismiss">
+                <div class="component-showcase">
                     <div class="card-container">
+                        <button class="dismiss-btn">
+                            <span class="material-icons md-18 material-icons-outlined">close
+                            </span>
+                        </button>
                         <div class="card-child card-header">
-                            <button class="dismiss-btn">
-                                <span class="material-icons md-18 material-icons-outlined">close
-                                </span>
-                            </button>
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -152,24 +200,58 @@
                         </div>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "card-container" in the parent container,
+"dismiss-btn" in dismiss element-->
+
+<div class="card-container">
+    <button class="dismiss-btn">
+        <span class="material-icons md-18 material-icons-outlined">close
+        </span>
+    </button>
+    <div class="card-child card-header">
+        <img class="card-img"
+            src="source path"
+            alt="">
+        <h4 class="card-title">Title</h4>
+        <p class="card-subtitle p-sm">Subtitle</p-sm>
+    </div>
+    <div class="card-badge card-badge-def">Badge Text</div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="discounted-price">Rs. 299</div>
+        <div class="actual-price p-sm">Rs. 499</div>
+        <div class="discount p-sm">60% OFF</div>
+    </div>
+</div>
+</code></pre>
             </div>
 
-            <div class="component-wrapper">
+            <div class="component-wrapper cards-w-overlay-wrapper">
                 <h1 class="wrapper-heading">Cards with Text Overlay</h1>
                 <hr>
                 <div class="description wrapper-description">
-                    Use the class <code class="class-highlight">overlay-text</code> in the element that you need as an
+                    Use the class <code class="class-highlight">card-container</code> in the parent container and <code
+                        class="class-highlight">overlay-text</code> in the element that you need as an
                     overlay.
+                    <br>
+                    In the below example, we have used an additional class in the card's container - <code
+                        class="class-highlight">card-disabled</code> which reduces the opacity of the card to give the
+                    disabled look.
                 </div>
-                <div class="component-showcase cards-w-overlay">
+                <div class="component-showcase">
                     <div class="card-container card-disabled">
+                        <button class="dismiss-btn"><span class="dismiss material-icons md-18 material-icons-outlined">
+                                close
+                            </span></button>
                         <div class="card-child card-header">
-                            <button class="dismiss-btn"><span
-                                    class="dismiss material-icons md-18 material-icons-outlined">
-                                    close
-                                </span></button>
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -185,12 +267,44 @@
                         </div>
                     </diV>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "card-container" in the parent container,
+"overlay-text" in the overlay element
+optional: "card-disabled" for the disabled style-->
+
+<div class="card-container card-disabled">
+    <button class="dismiss-btn">
+        <span
+        class="dismiss material-icons md-18 material-icons-outlined">
+        close
+        </span>
+    </button>
+    <div class="card-child card-header">
+       <img class="card-img"
+            src="source path"
+            alt="">
+        <h4 class="card-title">Title</h4>
+        <p class="card-subtitle p-sm">Subtitle</p-sm>
+    </div>
+    <div class="overlay-text grey-badge">Out of Stock</div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur </p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="discounted-price">Rs. 299</div>
+        <div class="actual-price p-sm">Rs. 499</div>
+        <div class="discount p-sm">60% OFF</div>
+    </div>
+</diV>
+</code></pre>
             </div>
 
-            <div class="component-wrapper">
+            <div class="component-wrapper cards-text-only-wrapper">
                 <h1 class="wrapper-heading">Cards - Text Only</h1>
                 <hr>
-                <div class="description wrapper-description">
+                <div class="description">
                     The below cards are only text with no images.
 
                     <br>
@@ -198,11 +312,12 @@
                         class="class-highlight">text-vertical</code>, based on the preferred type of card. Use these
                     classes along with the class <code class="class-highlight">text-only</code> in the card's container.
                 </div>
-                <div class="component-showcase cards-text-only">
+                <div class="component-showcase">
                     <div class="card-container text-only text-horizontal">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Title </h4>
                             <p class="card-subtitle p-sm">Subtitle</p-sm>
                         </div>
@@ -224,7 +339,8 @@
                     <div class="card-container text-only text-vertical">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Title </h4>
                             <p class="card-subtitle p-sm">Subtitle</p-sm>
                         </div>
@@ -243,9 +359,35 @@
                         </div>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "text-only" for these cards along with "card-container"
+use "text-vertical" or "text-horizontal" as preferred-->
+
+<div class="card-container text-only text-vertical">
+    <div class="card-child card-header">
+        <img class="card-img"
+            src="source path"
+            alt="">
+        <h4 class="card-title">Title </h4>
+        <p class="card-subtitle p-sm">Subtitle</p-sm>
+    </div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc p-sm">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Tempora quae sapiente cum.</p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="actions-wrapper">
+            <button class="action-btn p-sm">Action 1</button>
+            <button class="action-btn p-sm">Action 2</button>
+        </div>
+    </div>
+</div>
+</code></pre>
             </div>
 
-            <div class="component-wrapper">
+            <div class="component-wrapper cards-v-h-wrapper">
                 <h1 class="wrapper-heading">Cards - Horizontal/Vertical</h1>
                 <hr>
                 <div class="description wrapper-description">
@@ -259,7 +401,8 @@
                     <div class="card-container text-only text-horizontal">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Title </h4>
                             <p class="card-subtitle p-sm">Subtitle</p-sm>
                         </div>
@@ -281,9 +424,10 @@
                     <div class="card-container card-horizontal">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/61tknpGYn8S._AC_UL480_FMwebp_QL65_.jpg" alt="Habit Tracker">
+                                src="https://img.freepik.com/free-vector/weekly-planner-template_23-2148633788.jpg?size=626&ext=jpg"
+                                alt="Habit Tracker">
                             <div class="header-titles">
-                                <h4 class="card-title">Habit Tracker </h4>
+                                <h4 class="card-title">Weekly Planner </h4>
                                 <p class="card-subtitle p-sm">Rs. 199</p-sm>
 
                             </div>
@@ -305,7 +449,8 @@
                     <div class="card-container text-only text-vertical">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Title </h4>
                             <p class="card-subtitle p-sm">Subtitle</p-sm>
                         </div>
@@ -326,7 +471,8 @@
                     <div class="card-container card-vertical">
                         <div class="card-child card-header">
                             <img class="card-img"
-                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg" alt="Ruled Journal">
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
                             <h4 class="card-title">Lauret Blanc </h4>
                             <p class="card-subtitle p-sm">Ruled Journal</p-sm>
                         </div>
@@ -343,40 +489,90 @@
                         </div>
                     </div>
                 </div>
+                
+                <pre><code class="code-snippet">
+<!-- add the class "text-only" for text-only cards along with "card-container"
+use "text-vertical" or "text-horizontal" as preferred
+for cards with images, add the class "card-horizontal" or "card-vertical"-->
 
-                <div class="component-wrapper cards-with-shadow-wrapper">
-                    <h1 class="wrapper-heading">Cards with Shadow</h1>
-                    <hr>
-                    <div class="description wrapper-description">
-                        Here is a card that has a shadow, giving it a 3D look. Use class <code
-                            class="class-highlight">shadow</code> on the card's container to apply the shadow effect.
-                    </div>
-                    <div class="component-showcase cards-w-shadow">
-                        <div class="card-container shadow">
-                            <div class="card-child card-header">
-                                <button class="dismiss-btn">
-                                    <span class="dismiss material-icons md-18 material-icons-outlined">close
-                                    </span>
-                                </button>
-                                <img class="card-img"
-                                    src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
-                                    alt="Ruled Journal">
-                                <h4 class="card-title">Lauret Blanc </h4>
-                                <p class="card-subtitle p-sm">Ruled Journal</p-sm>
-                            </div>
-                            <div class="card-badge card-badge-def">New</div>
-                            <div class="card-child card-body">
-                                <hr>
-                                <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
-                            </div>
-                            <div class="card-child card-footer">
-                                <div class="discounted-price">Rs. 299</div>
-                                <div class="actual-price p-sm">Rs. 499</div>
-                                <div class="discount p-sm">60% OFF</div>
-                            </div>
+<div class="card-container card-vertical">
+    <div class="card-child card-header">
+        <img class="card-img"
+            src="source path"
+            alt="">
+        <h4 class="card-title">Title</h4>
+        <p class="card-subtitle p-sm">Subtitle</p-sm>
+    </div>
+    <div class="card-badge red-badge">Badge Text</div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="discounted-price">Rs. 299</div>
+        <div class="actual-price p-sm">Rs. 499</div>
+        <div class="discount p-sm">60% OFF</div>
+    </div>
+</div>
+</code></pre>
+
+            </div>
+            <div class="component-wrapper cards-with-shadow-wrapper">
+                <h1 class="wrapper-heading">Cards with Shadow</h1>
+                <hr>
+                <div class="description">
+                    Here is a card that has a shadow, giving it a 3D look. Add the class <code
+                        class="class-highlight">shadow</code> on the card's container to apply the shadow effect.
+                </div>
+                <div class="component-showcase">
+                    <div class="card-container shadow">
+                        <div class="card-child card-header">
+                            <button class="dismiss-btn">
+                                <span class="dismiss material-icons md-18 material-icons-outlined">close
+                                </span>
+                            </button>
+                            <img class="card-img"
+                                src="https://m.media-amazon.com/images/I/71qLvcSA2lL._AC_UL480_FMwebp_QL65_.jpg"
+                                alt="Ruled Journal">
+                            <h4 class="card-title">Lauret Blanc </h4>
+                            <p class="card-subtitle p-sm">Ruled Journal</p-sm>
+                        </div>
+                        <div class="card-badge card-badge-def">New</div>
+                        <div class="card-child card-body">
+                            <hr>
+                            <p class="card-desc  p-sm">Ruled Journal - Hard Bound - A5, 100GSM, 160 Pages</p>
+                        </div>
+                        <div class="card-child card-footer">
+                            <div class="discounted-price">Rs. 299</div>
+                            <div class="actual-price p-sm">Rs. 499</div>
+                            <div class="discount p-sm">60% OFF</div>
                         </div>
                     </div>
                 </div>
+
+                <pre><code class="code-snippet">
+<!-- add the class "shadow" along with "card-container"-->
+
+<div class="card-container shadow">
+    <div class="card-child card-header">
+        <img class="card-img"
+            src="source path"
+            alt="">
+        <h4 class="card-title">Title</h4>
+        <p class="card-subtitle p-sm">Subtitle</p-sm>
+    </div>
+    <div class="card-badge red-badge">Badge Text</div>
+    <div class="card-child card-body">
+        <hr>
+        <p class="card-desc  p-sm">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="card-child card-footer">
+        <div class="discounted-price">Rs. 299</div>
+        <div class="actual-price p-sm">Rs. 499</div>
+        <div class="discount p-sm">60% OFF</div>
+    </div>
+</div>
+</code></pre>
             </div>
         </section>
     </div>

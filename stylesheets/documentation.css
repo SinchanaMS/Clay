@@ -41,7 +41,21 @@
     height: 77vh;
     padding: 0.5rem;
     overflow-y: scroll;
+    -ms-overflow-style:inherit;  
+    scrollbar-width: none;
 }
+
+.nav-bar::-webkit-scrollbar {
+    width: 2px;
+  }
+
+.nav-bar::-webkit-scrollbar-track {
+    background: #f1f1f1;}
+  
+.nav-bar::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+  } 
+
 
 .nav-bar li{
     padding: 1rem;
@@ -117,7 +131,7 @@
 
 /* Avatars Section */
 .sized-avatars {
-    background: var(--sized-avatars-section)
+   background: var(--sized-avatars-section)
 }
 
 .squared-avatars {
