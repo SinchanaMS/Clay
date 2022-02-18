@@ -1,95 +1,53 @@
+
 :root{
-    --primary-color: #743017;
-    --secondary-color: #cea7a4;
-    --success-color: #cdddc7;
-    --warning-color: #e9e2b0;
-    --error-color: #ebccc3;
+    --PRIMARY-COLOR: #743017;
+    --PRIMARY-HOVER:hsla(16, 67%, 27%, 0.8);
+    --PRIMARY-HOVER-1:#8d482f;
+    --PRIMARY-DISABLED: hsla(16, 67%, 27%, 0.5);
+    --PRIMARY-TEXT: #f5efed;
 
-    --primary-text: #f5efed;
-    --secondary-text:#000000 ;
-    --success-text:#043828 ;
-    --warning-text:#3f2902 ;
-    --error-text: #742409;
+    --SECONDARY-COLOR: #cea7a4;
+    --SECONDARY-HOVER:hsla(4, 30%, 73%, 0.8) ;
+    --SECONDARY-HOVER-1: #bd9390;
+    --SECONDARY-DISABLED: hsla(4, 30%, 73%, 0.5);
+    --SECONDARY-TEXT:#000000 ;
+    --SECONDARY-DISABLED-TEXT: #918d8d;
 
-    --primary-hover:#8d482f;
-    --primary-disabled: #ceafa4;
+    --DEFAULT-GREEN: #6ab91b;
+    --LIGHT-GREEN:#cdddc7;
+    --DARK-GREEN: #008000;
+    --DARKER-GREEN: #043828;
 
-    --secondary-hover: #bd9390;
-    --secondary-disabled: #d3bebc;
-    --secondary-disabled-text: #9b9494;
+    --DEFAULT-RED: #af2b21;
+    --LIGHT-RED: #ebccc3;
+    --DARK-RED: #742409;
 
-    --code-highlight-bg: #d8d4d4;
+    --DEFAULT-YELLOW: #ffd700;
+    --LIGHT-YELLOW: #e9e2b0;
+    --DARK-YELLOW: #92680b;
+    --DARKER-YELLOW: #3f2902;
 
-    --default-red: #af2b21;
-    --default-green: #6ab91b;
-    --default-grey: #969494;
-
-    --card-badge-def: #ffd700;
-    --card-bg: #f1f5f9;
-    --shadow-grey: #6161612e;
-
-    --sized-avatars-section: #f8ebe7;
-    --squared-avatars-section: #f7f0e2;
-    --bordered-avatars-section: #f5ede7;
-
-    --simple-alerts-section: #f3eded;
-    --alerts-with-icons-section: #ebe7df;
-
-    --badges-on-icons-section: #f0e7dc;
-    --badges-on-avatars-section: #f3d6d4;
-    --badge-default-bg: #af2b21;
-    --badge-default-text: #ffffff;
-    --badge-border-default: #ffffff;
-   
-    --btns-section: #f0eee9 ;
-    --pri-btns-section: #f3eae0;
-    --sec-btns-section: #f0ece9;
-    --link-buttons-section: #f3f0f0;
-    --icon-buttons-section: #f0eee9;
-    --fab-section: #f8ece0;
-
-    --btn-light: #ece5e0;
-    --btn-light-hover: #d4ceca;
-    --btn-light-border: #9a9e9a;
-    --btn-outline-hover: #f7f4f4;
-    --btn-border-bottom: #e0dbdb;
-    --btn-border-bottom-hover: #cfcccc;
-    --btn-dark: #4f5458;
-    --btn-dark-text: #f1e9e9;
-    --btn-dark-hover: #404346;
+    --PURE-WHITE: #ffffff;
+    --PURE-BLACK: #000000;
     
-    --shadow-before: #ccc7bd;
-    --shadow-hover: #ada697;
+    --DEFAULT-GREY: #969494;
 
-    --res-img-section: #e8deda;
-    --sq-img-section: #e6d3cd;
-    --rd-img-section: #ddd8a9;
-
-    --textbox-section: #f1f5f9;
-    --lbl-input-section: #eff3f3;
-    --val-input-section: #f5f5f5;
-    --radio-section: #eaf1ef;
-    --checkbox-section: #e9f0e8;
-
-    --textbox-bg: #f5f5f5;
-    --success-input: #008000;
-    --warn-input: #92680b;
-
-    --grid-2-section: #fef2f2;
-    --grid-3-section: #fdf2f8;
-    --grid-wrapper: #fafafa;
-
-    --headings-section:  #f0e3e3;
-    --paragraphs-section: #f1ebeb;
-    --text-alignment-section: #eeebeb;
-    --text-utils-demo-bg: #ffffff;
-
-    --cards-w-badges-section: #eceaea;
-    --cards-w-dismiss-section: #ece6e4;
-    --cards-w-overlay-section: #f1eded;
-    --cards-text-only-section: #ebe1e1;
-    --cards-v-h-section: #ebdfd8;
-    --cards-with-shadow-section: #f1e9e7;
-
-    --ratings-section: #f5ebed;
+    --CARD-BADGE-DEF: #ffd700;
+    --CARD-BG: #f1f5f9;
+    --SHADOW-GREY: #6161612e;
+   
+    --BTN-LIGHT: #ece5e0;
+    --LIGHT-HOVER: #d4ceca;
+    --LIGHT-BORDER: #9a9e9a;
+    --BTN-OUTLINE: #9a9e9a;
+    --BTN-OUTLINE-HOVER: #f7f4f4;
+    --BOTTOM-BORDER: #743017;
+    --BTN-BORDER-BOTTOM: #e0dbdb;
+    --BTN-BORDER-BOTTOM-HOVER: #cfcccc;
+    --BTN-DARK: #4f5458;
+    --BTN-DARK-TEXT: #f1e9e9;
+    --BTN-DARK-HOVER: #404346;
+    
+    --SHADOW: #6161612e;
+    --SHADOW-HOVER: #ada697;
 }

@@ -1,4 +1,4 @@
-@import "/stylesheets/index.css";
+@import "/main.css";
 
 .textbox {
     background: var(--textbox-bg);
@@ -43,27 +43,27 @@
 }
 
 .val-success {
-    color: var(--success-input);
+    color: var(--DARK-GREEN);
 }
 
 .val-success input {
-    border-color: var(--success-input);
+    border-color: var(--DARK-GREEN);
 }
 
 .val-warn {
-    color: var(--warn-input);
+    color: var(--DARK-YELLOW);
 }
 
 .val-warn input {
-    border-color: var(--warn-input);
+    border-color: var(--DARK-YELLOW);
 }
 
 .val-error {
-    color: var(--default-red);
+    color: var(--DEFAULT-RED);
 }
 
 .val-error input {
-    border-color: var(--default-red);
+    border-color: var(--DEFAULT-RED);
 }
 
 .radio-btn {

@@ -1,6 +1,4 @@
-@import "/stylesheets/index.css";
-@import "/stylesheets/components/images/images.css";
-
+@import "/main.css";
 
 .headings h1 {
    font-size: 2em;
@@ -23,7 +21,7 @@
 }
 
 .p-grey {
-   color: grey;
+   color: var(--DEFAULT-GREY);
 }
 
 .text-left{

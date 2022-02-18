@@ -1,9 +1,9 @@
-@import "/stylesheets/index.css";
+@import "/main.css";
 
 .star{
-    color: var(--default-grey);
+    color: var(--DEFAULT-GREY);
 }
 
 .ratings-after .star{
-    color: gold;
+    color: var(--DEFAULT-YELLOW);
 }

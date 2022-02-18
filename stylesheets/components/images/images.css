@@ -1,6 +1,4 @@
-@import "/stylesheets/index.css";
-@import "/stylesheets/components/avatars/avatars.css";
-
+@import "/main.css";
 
 .img-responsive{
     max-width: 100%;

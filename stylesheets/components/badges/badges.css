@@ -1,6 +1,4 @@
-@import "/stylesheets/index.css";
-@import "/stylesheets/components/avatars/avatars.css";
-@import "/stylesheets/components/cards/cards.css";
+@import "/main.css";
 
 
 .badge-icon-container {
@@ -15,8 +13,8 @@
     position: absolute;
     top: -5px;
     right: -6px;
-    background: var(--card-badge-def);
-    color: var(--secondary-text);
+    background: var(--DEFAULT-YELLOW);
+    color: var(--PURE-BLACK);
 }
 
 .badge-text {
@@ -31,37 +29,37 @@
 
 .av-badge {
     right: 1px;
-    border: 2px solid var(--badge-border-default);
+    border: 2px solid var(--PURE-WHITE);
 }
 
 .av-sm-badge {
     height: 10px;
     width: 10px;
-    top: 1.4rem;
+    top: 2.3rem;
 }
 
 .av-md-badge {
     height: 1rem;
     width: 1rem;
-    top: 2.1rem;
+    top: 3.1rem;
 }
 
 .av-lg-badge {
     height: 1.25rem;
     width: 1.25rem;
-    top: 3.25rem;
+    top: 3.8rem;
 }
 
 .red-badge{
-    background: var(--badge-default-bg);
-    color: var(--badge-default-text);
+    background: var(--DEFAULT-RED);
+    color: var(--PURE-WHITE);
 }
 
 .grey-badge {
-    background: var(--default-grey);
-    color: var(--primary-text);
+    background: var(--DEFAULT-GREY);
+    color: var(--PURE-WHITE);
 }
 
 .green-badge {
-    background: var(--default-green);
+    background: var(--DEFAULT-GREEN);
 }

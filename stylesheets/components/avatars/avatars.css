@@ -1,35 +1,35 @@
-@import "/stylesheets/index.css";
+@import "/main.css";
 
 .avatar-sm {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-}
-
-.avatar-md {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
+.avatar-md {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
 .avatar-lg {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
 .squared {
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .border-red {
-    outline: 5px solid var(--default-red)
+    outline: 4px solid var(--DEFAULT-RED)
 }
 
 .border-green {
-    outline: 5px solid var(--default-green)
+    outline: 4px solid var(--DEFAULT-GREEN)
 }
 
 .border-grey {
-    outline: 5px solid var(--default-grey)
+    outline: 4px solid var(--DEFAULT-GREY)
 }
