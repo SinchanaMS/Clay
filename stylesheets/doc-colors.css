@@ -1,0 +1,69 @@
+:root {
+    /* cover page */
+    --COVER-PRIMARY: #92543e;
+    --COVER-SECONDARY: #f0d9d7;
+    --COVER-PRIMARY-HOVER: #743017;
+    --COVER-SECONDARY-HOVER: #e2cbc9;
+
+    /* alerts */
+    --SIMPLE-ALERTS-SECTION: #f3eded;
+    --ALERTS-WITH-ICONS-SECTION: #ebe7df;
+
+    /* avatars */
+    --SIZED-AVATARS-SECTION: #f8ebe7;
+    --SQUARED-AVATARS-SECTION: #f7f0e2;
+    --BORDERED-AVATARS-SECTION: #f5ede7;
+
+    /* badges */
+    --BADGES-ON-ICONS-SECTION: #f0e7dc;
+    --BADGES-ON-AVATARS-SECTION: #f3d6d4;
+
+    /* buttons */
+    --BTNS-SECTION: #f0eee9 ;
+    --PRI-BTNS-SECTION: #f3eae0;
+    --SEC-BTNS-SECTION: #f0ece9;
+    --LINK-BUTTONS-SECTION: #f3f0f0;
+    --ICON-BUTTONS-SECTION: #f0eee9;
+    --FAB-SECTION: #f8ece0;
+
+    /* cards */
+    --CARDS-W-BADGES-SECTION: #eceaea;
+    --CARDS-W-DISMISS-SECTION: #ece6e4;
+    --CARDS-W-OVERLAY-SECTION: #f1eded;
+    --CARDS-TEXT-ONLY-SECTION: #ebe1e1;
+    --CARDS-V-H-SECTION: #ebdfd8;
+    --CARDS-WITH-SHADOW-SECTION: #f1e9e7;
+
+    /* images */
+    --RES-IMG-SECTION: #e8deda;
+    --SQ-IMG-SECTION: #e6d3cd;
+    --RD-IMG-SECTION: #ddd8a9;
+
+    /* inputs */
+    --TEXTBOX-SECTION: #f1f5f9;
+    --LBL-INPUT-SECTION: #eff3f3;
+    --VAL-INPUT-SECTION: #f5f5f5;
+    --RADIO-SECTION: #eaf1ef;
+    --CHECKBOX-SECTION: #e9f0e8;
+
+    /* grids */
+    --GRID-2-SECTION: #fef2f2;
+    --GRID-3-SECTION: #fdf2f8;
+    --GRID-WRAPPER: #fafafa;
+
+    /* ratings */
+    --RATINGS-SECTION: #f5ebed;
+
+    /* text utils */
+    --HEADINGS-SECTION:  #f0e3e3;
+    --PARAGRAPHS-SECTION: #f1ebeb;
+    --TEXT-ALIGNMENT-SECTION: #eeebeb;
+    --TEXT-UTILS-DEMO-BG: #ffffff;
+
+    /* code highlight */
+    --CODE-HIGHLIGHT-BG: #d8d4d4;
+
+    /* nav bar */
+    --NAV-BAR-BG: #f1f1f1;
+    --NAV-BAR-HOVER: #f5eced
+}

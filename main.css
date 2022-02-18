@@ -1,14 +1,6 @@
-@import "./stylesheets/index.css";
+@import "/stylesheets/index.css";
+@import "/stylesheets/documentation.css";
 
-/* goes in colors.css */
-:root{
-    --cover-primary: #92543e;
-    --cover-secondary: #f0d9d7;
-    --cover-primary-hover: #743017;
-    --cover-secondary-hover: #e2cbc9;
-}
-
-/* stays in main.css */
 .hero {
     position: relative;
     display: flex;
@@ -60,23 +52,23 @@
 }
 
 .cover-action-btn:nth-child(1) {
-    background: var(--cover-primary);
-    color: var(--primary-text)
+    background: var(--COVER-PRIMARY);
+    color: var(--PRIMARY-TEXT)
 }
 
 .cover-action-btn:nth-child(1):hover {
-    background: var(--cover-primary-hover);
-    color: var(--primary-text);
+    background: var(--COVER-PRIMARY-HOVER);
+    color: var(--PRIMARY-TEXT);
     cursor: pointer;
 }
 
 .cover-action-btn:nth-child(2) {
-    background: var(--cover-secondary);
-    border: 2px solid var(--cover-primary);
+    background: var(--COVER-SECONDARY);
+    border: 2px solid var(--COVER-PRIMARY);
 }
 
 .cover-action-btn:nth-child(2):hover {
-    background: var(--cover-secondary-hover);
-    color: var(--secondary-text);
+    background: var(--COVER-SECONDARY-HOVER);
+    color: var(--SECONDARY-TEXT);
     cursor: pointer;
 }

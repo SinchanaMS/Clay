@@ -1,6 +1,4 @@
-@import "/stylesheets/index.css";
-@import "/stylesheets/components/badges/badges.css";
-@import "/stylesheets/components/text-utilities/text-utilities.css";
+@import "/main.css";
 
 .card-container {
     position: relative;
@@ -12,7 +10,7 @@
     max-width: 100%;
     margin: auto;
     padding: 7px;
-    background: var(--card-bg);
+    background: var( --CARD-BG);
 }
 
 .card-child {
@@ -44,16 +42,16 @@
     align-items: center;
     gap: 10px;
     padding-top: 5px;
-    outline: thin solid var(--secondary-color)
+    outline: thin solid var(--SECONDARY-COLOR)
 }
 
 .actual-price {
-    color: var(--primary-color);
+    color: var(--PRIMARY-COLOR);
     text-decoration: line-through;
 }
 
 .discount {
-    color: var(--default-green);
+    color: var(--DEFAULT-GREEN);
 }
 
 .card-badge {
@@ -72,17 +70,8 @@
 }
 
 .card-badge-def {
-    background: var(--card-badge-def);
-    color: var(--secondary-text);
-}
-
-.red-badge {
-    background-color: var(--default-red);
-    color: var(--primary-text);
-}
-
-.grey-badge {
-    color: var(--primary-text);
+    background: var(--DEFAULT-YELLOW);
+    color: var(--PURE-BLACK);
 }
 
 .dismiss-btn {
@@ -93,7 +82,7 @@
 }
 
 .card-disabled {
-    outline: 1px solid var(--default-grey);
+    outline: 1px solid var(--DEFAULT-GREY);
 }
 
 .card-disabled .card-header,
@@ -146,13 +135,13 @@
 }
 
 .action-btn:nth-child(1) {
-    background: var(--primary-color);
-    color: var(--primary-text);
+    background: var(--PRIMARY-COLOR);
+    color: var(--PRIMARY-TEXT);
 }
 
 .action-btn:nth-child(2) {
-    background: var(--secondary-color);
-    color: var(--secondary-text);
+    background: var(--SECONDARY-COLOR);
+    color: var(--SECONDARY-TEXT);
 }
 
 .card-horizontal .card-img {
@@ -187,5 +176,5 @@
 }
 
 .shadow {
-    box-shadow: 0px 2px 4px var(--shadow-grey), 0px 4px 8px var(--shadow-grey)
+    box-shadow: 0px 2px 4px var(--SHADOW-GREY), 0px 4px 8px var(--SHADOW-GREY)
 }

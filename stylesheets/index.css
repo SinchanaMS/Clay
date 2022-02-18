@@ -1,7 +1,14 @@
-/* all the css imports */
+@import "/stylesheets/components/alerts/alerts.css";
+@import "/stylesheets/components/avatars/avatars.css";
+@import "/stylesheets/components/badges/badges.css";
+@import "/stylesheets/components/buttons/buttons.css";
+@import "/stylesheets/components/cards/cards.css";
+@import "/stylesheets/components/grids/grids.css";
+@import "/stylesheets/components/images/images.css";
+@import "/stylesheets/components/inputs/inputs.css";
+@import "/stylesheets/components/ratings/ratings.css";
+@import "/stylesheets/components/text-utilities/text-utilities.css";
 
-@import "./documentation.css";
 @import "./colors.css";
 @import "./reset.css";
 @import "./typography.css";
-@import "/main.css"
