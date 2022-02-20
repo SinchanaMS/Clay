@@ -17,6 +17,14 @@
     color: var(--PURE-BLACK);
 }
 
+.md-24~.badge{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: -4px;
+    right: -5px;
+}
+
 .badge-text {
     font-size: small;
     padding: 3px;
