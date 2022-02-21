@@ -76,7 +76,8 @@
 input[type=radio] {
     min-width: fit-content;
     height: 1.25rem;
-    width: 1.25rem
+    width: 1.25rem;
+    accent-color: var(--PRIMARY-COLOR);
 }
 
 .checkbox-btn {
@@ -89,5 +90,6 @@ input[type=radio] {
 input[type=checkbox] {
     min-width: fit-content;
     height: 1.25rem;
-    width: 1.25rem
+    width: 1.25rem;
+    accent-color: var(--PRIMARY-COLOR);
 }

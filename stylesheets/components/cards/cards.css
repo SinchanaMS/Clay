@@ -178,3 +178,32 @@
 .shadow {
     box-shadow: 0px 2px 4px var(--SHADOW-GREY), 0px 4px 8px var(--SHADOW-GREY)
 }
+
+.card-block-horizontal{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+    width: 90%;
+    border-radius: 5px;
+    background: var(--CARD-BG);
+}
+
+.img-container{
+    padding: 12px;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 1rem;
+}
+
+.card-details > button{
+    padding: 3px;
+    margin: 5px;
+}
+
+.card-details > button:hover{
+    cursor: pointer;
+}

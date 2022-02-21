@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;300;400;700&display=swap");
+
 @import "/stylesheets/components/alerts/alerts.css";
 @import "/stylesheets/components/avatars/avatars.css";
 @import "/stylesheets/components/badges/badges.css";
