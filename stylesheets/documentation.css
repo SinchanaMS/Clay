@@ -400,6 +400,36 @@ pre {
     background: var(--RATINGS-SECTION)
 }
 
+/* Snackbars */
+.simple-snackbars {
+    background: var(--SIMPLE-SNACKBARS-SECTION);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.snackbars-simple {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.snackbars-with-icons {
+    background: var(--SNACKBARS-WITH-ICONS-SECTION);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+}
+
+.snackbar-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header-links {

@@ -1,0 +1,65 @@
+@import "/main.css";
+
+.snackbars {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.success-snackbar {
+    background: var(--LIGHT-GREEN);
+    color: var(--DARKER-GREEN);
+    border-bottom: 3px solid var(--DEFAULT-GREEN);
+}
+
+.warning-snackbar {
+    background: var(--LIGHT-YELLOW);
+    color: var(--DARKER-YELLOW);
+    border-bottom: 3px solid var(--DARK-YELLOW);
+}
+
+.danger-snackbar {
+    background: var(--LIGHT-RED);
+    color: var(--DARK-RED);
+    border-bottom: 3px solid var(--DEFAULT-RED);
+}
+
+.primary-snackbar-link {
+    background: var(--PRIMARY-COLOR);
+    color: var(--PRIMARY-TEXT);
+}
+
+.secondary-snackbar-link {
+    background: var(--SECONDARY-COLOR);
+    color: var(--SECONDARY-TEXT);
+    border-bottom: 3px solid var(--PRIMARY-HOVER);
+}
+
+.icon-snackbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto 1rem;
+}
+
+.icon-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.primary-snackbar-link .close-btn {
+    color: var(--PRIMARY-TEXT)
+}
+
+.close-btn {
+    display: flex;
+    background: none;
+    border: none
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}

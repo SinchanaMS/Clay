@@ -60,10 +60,12 @@
     --TEXT-ALIGNMENT-SECTION: #eeebeb;
     --TEXT-UTILS-DEMO-BG: #ffffff;
 
+    /* snackbars */
+    --SIMPLE-SNACKBARS-SECTION: #f0e3e3;
+    --SNACKBARS-WITH-ICONS-SECTION: #eee7d9;
+
     /* code highlight */
     --CODE-HIGHLIGHT-BG: #d8d4d4;
 
-    /* nav bar */
-    --NAV-BAR-BG: #f1f1f1;
-    --NAV-BAR-HOVER: #f5eced
+
 }
