@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerts</title>
-    <link rel="stylesheet" href="/stylesheets/components/alerts/alerts.css">
+    <title>Snackbars</title>
+    <link rel="stylesheet" href="/stylesheets/components/snackbars/snackbars.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
         integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,7 +29,7 @@
             </ul>
             <ul>
                 <h1 class="nav-title">Components</h1>
-                <li class="active-page"><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
                 <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
                 <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
                 <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
@@ -39,144 +39,147 @@
                 <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
                 <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
                 <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
-                <li><a href="/docs/snackbars.html" class="nav-subtitles">Snackbars</a></li>        
+                <li class="active-page"><a href="/docs/snackbars.html" class="nav-subtitles">Snackbars</a></li>
             </ul>
         </nav>
 
         <section class="content">
             <div class="component-wrapper">
-                <h1 class="wrapper-heading">Alerts</h1>
+                <h1 class="wrapper-heading">Snackbars</h1>
                 <hr>
                 <div class="description">
-                    Alerts help a user understand the current status of action without interrupting the user's flow. There are 5 variants available - success alert, warning alert, danger alert, primary alert with a link, and secondary alert with a link.
+                    Snackbars inform the user of an action that has been performed by an app or will perform in the
+                    future. They appear at the bottom of the screen temporarily, without interrupting any user activity.
                 </div>
             </div>
 
-            <div class="component-wrapper simple-alerts">
-                <h1 class="wrapper-heading">Simple Alerts</h1>
+            <div class="component-wrapper simple-snackbars">
+                <h1 class="wrapper-heading">Simple Snackbars</h1>
                 <hr>
                 <div class="description">
-                    These are alerts without any icons, they only hold the text.
+                    These are snackbars without any icons, they only hold the text.
                     <br>
-                    Use the class <code class="class-highlight">alerts</code> along with the variant class as preferred
-                    - <code class="class-highlight">success-alert</code>, <code
-                        class="class-highlight">warning-alert</code>, <code class="class-highlight">danger-alert</code>,
-                    <code class="class-highlight">primary-alert-link</code> or <code
-                        class="class-highlight">secondary-alert-link</code>.
+                    Use the class <code class="class-highlight">snackbars</code> along with the variant class as
+                    preferred
+                    - <code class="class-highlight">success-snackbar</code>, <code
+                        class="class-highlight">warning-snackbar</code>, <code
+                        class="class-highlight">danger-snackbar</code>,
+                    <code class="class-highlight">primary-snackbar-link</code> or <code
+                        class="class-highlight">secondary-snackbar-link</code>.
                     <br><br>
-                    Here are some simple alerts:
+                    Here are some simple snackbars:
                 </div>
 
-                <div class="component-showcase alerts-simple">
-                    <div class="alerts success-alert">
-                        This is a simple success alert!
+                <div class="component-showcase snackbars-simple">
+                    <div class="snackbars success-snackbar">
+                        This is a simple success snackbar!
                     </div>
-                    <div class="alerts warning-alert">
-                        This is a simple warning alert!
+                    <div class="snackbars warning-snackbar">
+                        This is a simple warning snackbar!
                     </div>
-                    <div class="alerts danger-alert">
-                        This is a simple danger alert!
-                    </div>
-
-                    <div class="alerts  primary-alert-link">
-                        A simple primary alert with an <a href="#">example link</a>. Give it a click if you like.
+                    <div class="snackbars danger-snackbar">
+                        This is a simple error snackbar!
                     </div>
 
-                    <div class="alerts  secondary-alert-link">
-                        A simple secondary alert with an <a href="#">example link</a>. Give it a click if you like.
+                    <div class="snackbars  primary-snackbar-link">
+                        A simple primary snackbar with an <a href="#">example link</a>. Give it a click if you like.
+                    </div>
+
+                    <div class="snackbars  secondary-snackbar-link">
+                        A simple secondary snackbar with an <a href="#">example link</a>. Give it a click if you like.
                     </div>
                 </div>
 
                 <pre><code class="code-snippet">
-<!-- add class="alerts" along with "success-alert", "warning-alert", "danger-alert", 
-"primary-alert-link", or "secondary-alert-link"-->
-<div class="alerts success-alert">
-    This is a simple success alert!
+<!-- add class="snackbars" along with "success-snackbar", "warning-snackbar", "danger-snackbar", "primary-snackbar-link", or "secondary-snackbar-link"-->
+<div class="snackbars success-snackbar">
+    This is a simple success snackbar!
 </div>
 </code></pre>
 
             </div>
 
-            <div class="component-wrapper alerts-with-icons">
-                <h1 class="wrapper-heading">Alerts with Icons</h1>
+            <div class="component-wrapper snackbars-with-icons">
+                <h1 class="wrapper-heading">Snackbars with Icons</h1>
                 <hr>
                 <div class="description">
-                    These are alerts with message icons and a dismiss button. Use the class <code
-                        class="class-highlight">icon-alerts</code> along with the classes <code
-                        class="class-highlight">alerts</code> and the preferred variant.
+                    These are snackbars with message icons and a dismiss button. Use the class <code
+                        class="class-highlight">icon-snackbars</code> along with the classes <code
+                        class="class-highlight">snackbars</code> and the preferred variant.
                     <br>
-                    These alerts have two child containers - one for the icon and alert message, and the other for the
+                    These snackbars have two child containers - one for the icon and snackbar message, and the other for
+                    the
                     dismiss button.<br>
                     Use class <code class="class-highlight">icon-text</code> in the first child and <code
                         class="class-highlight">close-btn</code> in the second child.
                     <br><br>
-                    Here are some alerts with icons:
+                    Here are some snackbars with icons:
                 </div>
-                <div class="component-showcase alert-icons">
-                    <div class="alerts success-alert icon-alerts">
+                <div class="component-showcase snackbar-icons">
+                    <div class="snackbars success-snackbar icon-snackbars">
                         <div class="icon-text">
-                            <span class="alert-icons material-icons md-18 material-icons-outlined">
+                            <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                 check_circle
                             </span>
-                            This is a success alert!
+                            This is a success snackbar!
                         </div>
-                        <div class="close-alert-icon">
+                        <div class="close-snackbar-icon">
                             <button class="close-btn">
-                                <span class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div class="alerts warning-alert icon-alerts">
+                    <div class="snackbars warning-snackbar icon-snackbars">
                         <div class="icon-text">
-                            <span class="alert-icons material-icons md-18 material-icons-outlined">
+                            <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                 error_outline
                             </span>
-                            This is a warning alert!
+                            This is a warning snackbar!
                         </div>
-                        <div class="close-alert-icon">
+                        <div class="close-snackbar-icon">
                             <button class="close-btn">
-                                <span class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div class="alerts danger-alert icon-alerts">
+                    <div class="snackbars danger-snackbar icon-snackbars">
                         <div class="icon-text">
-                            <span class="alert-icons material-icons md-18 material-icons-outlined">
+                            <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                 report_problem
                             </span>
-                            This is a simple danger alert!
+                            This is an error snackbar!
                         </div>
-                        <div class="close-alert-icon">
+                        <div class="close-snackbar-icon">
                             <button class="close-btn">
-                                <span class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div class="alerts primary-alert-link icon-alerts">
+                    <div class="snackbars primary-snackbar-link icon-snackbars">
                         <div class="icon-text">
-                            A primary alert with an <a href="#">example link</a>
+                            A primary snackbar with an <a href="#">example link</a>
                         </div>
-                        <div class="close-alert-icon">
+                        <div class="close-snackbar-icon">
                             <button class="close-btn">
-                                <span class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div class="alerts secondary-alert-link icon-alerts">
+                    <div class="snackbars secondary-snackbar-link icon-snackbars">
                         <div class="icon-text">
-                            A secondary alert with an <a href="#">example link</a>
+                            A secondary snackbar with an <a href="#">example link</a>
                         </div>
-                        <div class="close-alert-icon">
+                        <div class="close-snackbar-icon">
                             <button class="close-btn">
-                                <span class="alert-icons material-icons md-18 material-icons-outlined">
+                                <span class="snackbar-icons material-icons md-18 material-icons-outlined">
                                     close
                                 </span>
                             </button>
@@ -185,21 +188,21 @@
                 </div>
 
                 <pre><code class="code-snippet">
-<!-- add class="icon-alerts" along with "alerts" and the required variant class.
+<!-- add class="icon-snackbars" along with "snackbars" and the required variant class.
 add class="icon-text" in the first child container
 add class="close-btn" in the second child container-->
 
-<div class="alerts warning-alert icon-alerts">
+<div class="snackbars warning-snackbar icon-snackbars">
     <div class="icon-text">
-        <span class="alert-icons material-icons md-18 material-icons-outlined">
+        <span class="snackbar-icons material-icons md-18 material-icons-outlined">
             error_outline
         </span>
-        This is a warning alert!
+        This is a warning snackbar!
     </div>
-    <div class="close-alert-icon">
+    <div class="close-snackbar-icon">
         <button class="close-btn">
             <span
-                class="alert-icons material-icons md-18 material-icons-outlined">
+                class="snackbar-icons material-icons md-18 material-icons-outlined">
                 close
             </span>
         </button>
@@ -207,14 +210,12 @@ add class="close-btn" in the second child container-->
 </div>
 
 </code></pre>
-
             </div>
 
             <div class="page-nav-links">
-                <a href="/index.html" class="prev-page p-lg">&lt Installation</a>
-                <a href="/docs/avatars.html" class="next-page p-lg">Avatars &gt</a>
+                <a href="/docs/text-utilities.html" class="prev-page p-lg">&lt Text Utilities</a>
+                <a href="/docs/lists.html" class="next-page p-lg">Lists &gt</a>
             </div>
-
         </section>
     </div>
 
