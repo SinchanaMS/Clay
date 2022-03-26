@@ -403,8 +403,6 @@ pre {
 /* Snackbars */
 .simple-snackbars {
     background: var(--SIMPLE-SNACKBARS-SECTION);
-    padding: 1rem;
-    border-radius: 1rem;
 }
 
 .snackbars-simple {
@@ -429,6 +427,33 @@ pre {
     gap: 0px;
 }
 
+/* Lists */
+.lists-spaced-wrapper {
+    background: var(--LISTS-SPACED-SECTION);
+}
+
+.lists-spaced li {
+    padding: 12px;
+    background: var(--SPACED-LISTS-BG);
+    border-radius: 7px;
+    font-size: large;
+    flex-basis: 20%;
+}
+
+.spaced-lists {
+    flex-wrap: wrap;
+}
+
+.lists-stacked-wrapper {
+    background: var(--LISTS-STACKED-SECTION);
+}
+
+.lists-stacked li {
+    padding: 1rem;
+    background: var(--STACKED-LISTS-BG);
+    border-radius: 7px;
+    font-size: large;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {

@@ -1,0 +1,23 @@
+@import "/main.css";
+
+.spaced-lists{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 1rem   
+}
+
+.spaced-lists li{
+   text-align: center;
+}
+
+.stacked-lists{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem
+}
+
+.stacked-lists li{
+    text-align: center;
+}
