@@ -472,8 +472,15 @@ pre {
     background: var(--ALERTS-WITH-ICONS-SECTION);
 }
 
+.sidebar-demo{
+    outline: 1px solid var(--DEFAULT-GREY);
+    background: var(--BTN-LIGHT);
+    display: flex;
+    width: 100%;
+}
+
 .side-bar{
-    width:30%;
+    width:40%;
     text-align: center;
 }
 
@@ -483,6 +490,12 @@ pre {
     border-radius: 7px;
     font-size: large;
     margin: 5px;
+}
+
+.main-content{
+    outline: 1px solid var(--DEFAULT-GREY);
+    width: 60%;
+    text-align: center;
 }
 
 /* Media Queries */
