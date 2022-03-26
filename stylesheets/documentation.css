@@ -417,7 +417,6 @@ pre {
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
-
 }
 
 .snackbar-icons {
@@ -453,6 +452,36 @@ pre {
     background: var(--STACKED-LISTS-BG);
     border-radius: 7px;
     font-size: large;
+}
+
+/* Navigation */
+.top-nav-wrapper{
+    background: var(--SIMPLE-ALERTS-SECTION)
+}
+
+.top-nav{
+    padding: 1rem;
+    background: var(--SECONDARY-COLOR);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.sidebar-wrapper{
+    background: var(--ALERTS-WITH-ICONS-SECTION);
+}
+
+.side-bar{
+    width:30%;
+    text-align: center;
+}
+
+.side-bar li{
+    padding: 1rem;
+    background: var(--STACKED-LISTS-BG);
+    border-radius: 7px;
+    font-size: large;
+    margin: 5px;
 }
 
 /* Media Queries */

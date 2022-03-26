@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="/stylesheets/components/navigation/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
+        </header>
+
+        <nav class="nav-bar">
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Inputs</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+                <li><a href="/docs/snackbars.html" class="nav-subtitles">Snackbars</a></li>
+                <li><a href="/docs/lists.html" class="nav-subtitles">Lists</a></li>
+                <li class="active-page"><a href="/docs/navigation.html" class="nav-subtitles">Navigation</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <div class="component-wrapper">
+                <h1 class="wrapper-heading">Navigation</h1>
+                <hr>
+                <div class="description">
+                    Navigation is a set of actions that guides a user throughout the app or website, enabling them to
+                    interact with the product.
+                </div>
+            </div>
+
+            <div class="component-wrapper top-nav-wrapper">
+                <h1 class="wrapper-heading">Top Navigation</h1>
+                <hr>
+                <div class="description">
+                    This is an example of navigation bar at the top, usually placed in the header section of the web
+                    page.
+                    <br>
+                    Use the class <code class="class-highlight">top-nav</code> in the <code
+                        class="class-highlight">&ltnav&gt</code> tag and <code
+                        class="class-highlight">top-nav-links</code> in the <code
+                        class="class-highlight">&ltul&gt</code> tag.
+                    <br><br>
+                </div>
+
+                <div class="component-showcase">
+                    <nav class="top-nav">
+                        <p class="p-sm">yourBrandName</p>
+                        <ul class="top-nav-links p-sm">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <pre><code class="code-snippet">
+<!-- add class="top-nav" in the <nav> tag and "top-nav-links" in the <ul> tag-->
+<nav class="top-nav">
+    <h1>yourBrandName</h1>
+    <ul class="top-nav-links">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</nav>
+</code></pre>
+            </div>
+
+            <div class="component-wrapper sidebar-wrapper">
+                <h1 class="wrapper-heading">Side Bar</h1>
+                <hr>
+                <div class="description">
+                    This is an example of navigation bar on either the left or the right side of the web page, usually
+                    used to navigate through multiple pages.
+
+                    <br>
+                </div>
+
+                <div class="component-showcase nav-side-bar">
+                    <nav class="side-bar">
+                        <ul>
+                            <h1 class="nav-title">Title</h1>
+                            <li><a href="#">Page1</a></li>
+                            <li><a href="#">Page2</a></li>
+                            <li><a href="#">Page3</a></li>
+                            <li><a href="#">Page4</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <pre><code class="code-snippet">
+<nav>
+    <ul>
+        <h1>Title</h1>
+        <li><a href="#">Page1</a></li>
+        <li><a href="#">Page2</a></li>
+        <li><a href="#">Page3</a></li>
+        <li><a href="#">Page4</a></li>
+    </ul>
+</nav>
+</code></pre>
+            </div>
+
+            <div class="page-nav-links">
+                <a href="/docs/lists.html" class="prev-page p-lg">&lt Lists</a>
+                <a href="/docs/modal.html" class="next-page p-lg">Modal &gt</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
+</body>
+
+</html>
