@@ -465,6 +465,7 @@ pre {
     border-radius: 4px;
     width: 100%;
     max-width: 100%;
+    font-weight: bold;
 }
 
 .sidebar-wrapper{
