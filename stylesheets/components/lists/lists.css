@@ -2,9 +2,9 @@
 
 .spaced-lists{
     display: flex;
-    width: 100%;
     justify-content: space-around;
-    gap: 1rem   
+    gap: 1rem;
+    width: 100%;
 }
 
 .spaced-lists li{
@@ -14,8 +14,8 @@
 .stacked-lists{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     width: 100%;
-    gap: 1rem
 }
 
 .stacked-lists li{
