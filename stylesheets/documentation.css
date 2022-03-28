@@ -498,6 +498,37 @@ pre {
     text-align: center;
 }
 
+/* Modals */
+
+.modal-cta-wrapper{
+    background: var(--HEADINGS-SECTION);
+}
+
+.modal-cta-centre-wrapper{
+    background: var(--PARAGRAPHS-SECTION);
+}
+
+.modals{
+    width: 80%;
+    height: 30rem;
+    outline: 1px solid black;
+}
+
+.modal{
+    outline: 1px solid var(--DEFAULT-GREY);
+    background: var(--BTN-DARK-TEXT);
+    padding: 2rem;
+}
+
+.modal h1{
+    color: var(--DARK-GREEN);
+}
+
+.modal-bg-content{
+    background: url("/assets/res-img-round.jfif"); 
+    height: 100%;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header-links {
