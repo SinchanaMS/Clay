@@ -529,6 +529,18 @@ pre {
     height: 100%;
 }
 
+/* Sliders */
+.sliders-wrapper{
+    background: var(--GRID-2-SECTION);
+}
+
+.sliders-wrapper .component-showcase {
+    width: 60%;
+    margin-bottom: 2rem;
+    background: var(--GRID-WRAPPER);
+    outline: 2px solid var(--SECONDARY-COLOR);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header-links {
@@ -585,4 +597,9 @@ pre {
         font-weight: 600;
         font-size: 14px;
     }
+
+    .sliders-wrapper .component-showcase {
+        width: 100%;
+    }
+
 }
