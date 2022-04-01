@@ -4,7 +4,6 @@ sliderValue.innerHTML = slider.value
 
 function getSliderValue(e){
     sliderValue.innerHTML = e.target.value
-    console.log("called")
 }
 
 slider.addEventListener("change", getSliderValue)
