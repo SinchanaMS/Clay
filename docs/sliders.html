@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliders</title>
+    <link rel="stylesheet" href="/stylesheets/components/sliders/sliders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="documentation-section">
+        <header class="doc-header">
+            <ul class="header-links">
+                <li><a href="/index.html" class="nav-subtitles">Home</a></li>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Install</a></li>
+                <li><a target="_blank" href="https://github.com/SinchanaMS/Clay" class="nav-subtitles">GitHub</a></li>
+            </ul>
+        </header>
+
+        <nav class="nav-bar">
+            <ul>
+                <h1 class="nav-title">Get Started</h1>
+                <li><a href="/docs/intro.html" class="nav-subtitles">Installation</a></li>
+            </ul>
+            <ul>
+                <h1 class="nav-title">Components</h1>
+                <li><a href="/docs/alerts.html" class="nav-subtitles">Alerts</a></li>
+                <li><a href="/docs/avatars.html" class="nav-subtitles">Avatars</a></li>
+                <li><a href="/docs/badges.html" class="nav-subtitles">Badges</a></li>
+                <li><a href="/docs/buttons.html" class="nav-subtitles">Buttons</a></li>
+                <li><a href="/docs/cards.html" class="nav-subtitles">Cards</a></li>
+                <li><a href="/docs/images.html" class="nav-subtitles">Images</a></li>
+                <li><a href="/docs/inputs.html" class="nav-subtitles">Inputs</a></li>
+                <li><a href="/docs/grids.html" class="nav-subtitles">Grids</a></li>
+                <li><a href="/docs/lists.html" class="nav-subtitles">Lists</a></li>
+                <li><a href="/docs/modals.html" class="nav-subtitles">Modals</a></li>
+                <li><a href="/docs/navigation.html" class="nav-subtitles">Navigation</a></li>
+                <li><a href="/docs/ratings.html" class="nav-subtitles">Ratings</a></li>
+                <li class="active-page"><a href="/docs/sliders.html" class="nav-subtitles">Sliders</a></li>
+                <li><a href="/docs/snackbars.html" class="nav-subtitles">Snackbars</a></li>
+                <li><a href="/docs/text-utilities.html" class="nav-subtitles">Text Utilities</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+
+            <div class="component-wrapper sliders-wrapper">
+                <h1 class="wrapper-heading">Sliders</h1>
+                <hr>
+                <div class="description">
+                    <p>Sliders are often the UI control of choice for letting users select a value or range from a fixed
+                    set of options.
+                    Here's a default slider with a minimum value of 1 and a maximum value of 10. Use class <code
+                        class="class-highlight">slider-container</code> in the parent container and class <code
+                        class="class-highlight">slider</code> in the input tag.</p>
+                   
+                   <p>Optional: Use class <code class="class-highlight">slider-range</code> in the parent container of the
+                    range values you wish to show and <code class="class-highlight">slider-value</code> in the
+                    corresponding tag to show the slider value dynamically.</p>
+                </div>
+                <div class="component-showcase">
+                    <div class="slider-container">
+                        <div class="slider-range">
+                            <p class="min-value">1</p>
+                            <p class="max-value">10</p>
+                        </div>
+                        <input type="range" min="1" max="10" value="5" class="slider">
+                        <p>Value: <span class="slider-value"></span></p>
+                    </div>
+                </div>
+                
+                <pre><code class="code-snippet">
+<!-- add class="slider-container" in the parent container, class="slider" in the input tag.
+Optional: Use class "slider-range" in the parent container of the range values and "slider-value" in the corresponding tag to show the dynamic value of the slider-->
+
+<div class="slider-container">
+    <div class="slider-range">
+        <p class="min-value">1</p>
+        <p class="max-value">10</p>
+    </div>
+    <input type="range" min="1" max="10" value="5" class="slider">
+    <p>Value: <span class="slider-value"></span></p>
+</div>
+</code></pre>
+            </div>
+            <div class="page-nav-links">
+                <a href="/docs/ratings.html" class="prev-page p-lg">&lt Ratings</a>
+                <a href="/docs/snackbars.html" class="next-page p-lg">Snackbars &gt</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblock.js"></script>
+    <script src="/js/sliderHandler.js"></script>
+</body>
+
+</html>
