@@ -83,7 +83,6 @@
                 </div>
 
                 <pre><code class="code-snippet">
-<!-- add class="top-nav" in the <nav> tag and "top-nav-links" in the <ul> tag-->
 <nav class="top-nav">
     <h1>yourBrandName</h1>
     <ul class="top-nav-links">
@@ -132,6 +131,118 @@
 </code></pre>
             </div>
 
+            <div class="component-wrapper top-nav-wrapper">
+                <h1 class="wrapper-heading">Sub-navigation</h1>
+                <hr>
+                <div class="description">
+                    <p>Sub-navigation refers to the navigation UI that helps users access lower-level categories in the
+                    site's information architecture.</p>
+                    
+                    <p>Use the class <code class="class-highlight">sub-navbar</code> in the <code
+                        class="class-highlight">&ltnav&gt</code> tag, <code
+                        class="class-highlight">subnav</code> in the sub-menu container tags. Use class <code
+                        class="class-highlight">subnavbtn</code> in the button tag and finally <code
+                        class="class-highlight">subnav-content</code> in the menu list.</p>
+                </div>
+
+                <div class="component-showcase">
+                    <nav class="sub-navbar">
+                        <button class="subnavbtn"><a href="#">Home</a></button>
+                        <div class="subnav">
+                            <button class="subnavbtn">About <span
+                                    class="material-icons material-icons-outlined">expand_more</span>
+                            </button>
+                            <ul class="subnav-content">
+                                <li><a href="#">Location</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="subnav">
+                            <button class="subnavbtn">Projects <span
+                                    class="material-icons material-icons-outlined">expand_more</span></button>
+                            <ul class="subnav-content">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <pre><code class="code-snippet">
+<nav class="sub-navbar">
+    <button class="subnavbtn"><a href="#">Home</a></button>
+    <div class="subnav">
+        <button class="subnavbtn">About 
+            <span
+                class="material-icons material-icons-outlined">expand_more</span>
+        </button>
+        <ul class="subnav-content">
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Projects 
+            <span
+                class="material-icons material-icons-outlined">expand_more</span></button>
+        <ul class="subnav-content">
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </div>
+</nav>
+</code></pre>
+            </div>
+
+            <div class="component-wrapper sidebar-wrapper">
+                <h1 class="wrapper-heading">Hamburger</h1>
+                <hr>
+                <div class="description">
+                    <p>The hamburger menu, or the hamburger icon, is the button in websites and apps that typically opens
+                    up into a side menu or navigation drawer. Change the size of the screen to check the links change into a hamburger.</p>
+                    <p>Use the class <code class="class-highlight">hamburger-navbar</code> in the <code
+                        class="class-highlight">&ltnav&gt</code> tag and both the id and class as <code
+                        class="class-highlight">ham-list</code> in the <code
+                        class="class-highlight">&ltul&gt</code> tag.</p>
+                </div>
+
+                <div class="component-showcase nav-hamburger">
+                    <nav class="hamburger-navbar">
+                        <h1>yourBrandName</h1>                       
+                        <ul id="ham-list" class="ham-list">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                        <button class="hamburger-icon-btn">
+                            <span class="material-icons material-icons-outlined md-36">
+                                menu
+                            </span>
+                        </button>
+                    </nav>
+                </div>
+
+                <pre><code class="code-snippet">
+<nav class="hamburger-navbar">
+    <h1>yourBrandName</h1>                       
+    <ul id="ham-list" class="ham-list">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+    <button class="hamburger-icon-btn">
+        <span class="material-icons material-icons-outlined md-36">
+            menu
+        </span>
+    </button>
+</nav>
+</code></pre>
+            </div>
+
             <div class="page-nav-links">
                 <a href="/docs/modals.html" class="prev-page p-lg">&lt Modals</a>
                 <a href="/docs/ratings.html" class="next-page p-lg">Ratings &gt</a>
@@ -147,6 +258,7 @@
         hljs.highlightAll();
     </script>
     <script src="/js/codeblock.js"></script>
+    <script src="/js/hamburger.js"></script>
 </body>
 
 </html>
