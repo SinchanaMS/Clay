@@ -1,13 +1,120 @@
 @import "/main.css";
 
-.top-nav{
+.top-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.top-nav-links{
+.top-nav-links {
     display: flex;
     gap: 10px;
 }
 
+.sub-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--SECONDARY-COLOR);
+    width: 88vw;
+    font-weight: bold;
+}
+
+.subnav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 5px 7px;
+}
+
+.subnavbtn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none; 
+    padding: 5px 7px;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    z-index: 1;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--SECONDARY-COLOR); 
+}
+
+.subnavbtn:hover{
+    cursor: pointer;
+    color: var(--PRIMARY-COLOR);
+}
+
+.subnav:hover .subnav-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    width: 100%;
+}
+
+.subnav-content a:hover{
+ color: var(--PRIMARY-COLOR);
+}
+
+.hamburger-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--SECONDARY-COLOR); 
+    border-radius: 4px;  
+}
+
+.ham-list{
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.hamburger-icon-btn{
+    display: none;
+    border: none;
+    background: none;
+}
+
+
+@media (max-width: 480px) {
+   
+    .hamburger-navbar{
+        position: relative;
+        align-items: center;
+    }
+
+    .hamburger-icon-btn{
+        display: block;
+    }
+
+    .ham-list{
+        display: none;
+    }
+    
+    .ham-list.mobile-view{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        position: absolute;
+        top: 4.2rem;
+        right: 0px;
+        width: 40%;
+        padding: 1rem;
+        text-align: right;
+        background: var(--SECONDARY-COLOR);;
+        border-radius: 4px;
+    }
+}

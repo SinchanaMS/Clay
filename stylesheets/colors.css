@@ -7,9 +7,9 @@
     --PRIMARY-TEXT: #f5efed;
 
     --SECONDARY-COLOR: #cea7a4;
-    --SECONDARY-HOVER:hsla(4, 30%, 73%, 0.8) ;
+    --SECONDARY-HOVER:#cfa8a6cc ;
     --SECONDARY-HOVER-1: #bd9390;
-    --SECONDARY-DISABLED: hsla(4, 30%, 73%, 0.5);
+    --SECONDARY-DISABLED: #cfa8a580;
     --SECONDARY-TEXT:#000000 ;
     --SECONDARY-DISABLED-TEXT: #918d8d;
 
