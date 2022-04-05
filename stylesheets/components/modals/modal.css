@@ -5,30 +5,45 @@
     position: relative;
 }
 
+.modal-handler{
+    width: fit-content;
+    margin: auto;
+}
+
+.modal-bg-content{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--MODAL-BG);
+}
+
 .modal {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 57%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-}
-
-.modal-bg-content {
-    filter: blur(2px);
+    background-color: var(--PURE-WHITE);
 }
 
 .modal-cta-right {
     display: flex;
     justify-content: flex-end;
     padding: 4px 7px;
-    margin-top: 12px;
+    margin-top: 0.75rem;
     width: 100%;
+
 }
 
-.modal-cta {
+.modal-cta{
     padding: 4px 7px;
     margin: 7px;
     border-radius: 4px;
