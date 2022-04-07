@@ -31,6 +31,11 @@ Visit the below link to refer to the documentation site of Iridescent:
  - Grids
  - Ratings
  - Text Utilities
+ - Navigation
+ - Modals
+ - Slider
+ - Lists
+
 
 
 # How Can You Help?
