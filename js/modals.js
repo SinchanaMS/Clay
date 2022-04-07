@@ -1,10 +1,10 @@
-var modalBg = document.querySelector(".modal-bg-content");
-var modalCentreBg = document.querySelector(".modal-bg-content-centre");
-var modalHandlerBtn = document.querySelector(".modal-handler")
-var modalCentreHandlerBtn = document.querySelector (".modal-handler-centre")
-var modalCTA = document.querySelector(".modal-cta")
-var modalCTA1 = document.querySelector(".modal-cta-one")
-var modalCTA2 = document.querySelector(".modal-cta-two")
+var modalBg = document.querySelector(".clay-modal-bg-content");
+var modalCentreBg = document.querySelector(".clay-modal-bg-content-centre");
+var modalHandlerBtn = document.querySelector(".clay-modal-handler")
+var modalCentreHandlerBtn = document.querySelector (".clay-modal-handler-centre")
+var modalCTA = document.querySelector(".clay-modal-cta")
+var modalCTA1 = document.querySelector(".clay-modal-cta-one")
+var modalCTA2 = document.querySelector(".clay-modal-cta-two")
 
 
 modalHandlerBtn.addEventListener("click", ()=>modalBg.style.display="block")

@@ -5,12 +5,12 @@
     position: relative;
 }
 
-.modal-handler{
+.clay-modal-handler{
     width: fit-content;
     margin: auto;
 }
 
-.modal-bg-content{
+.clay-modal-bg-content{
     display: none;
     position: fixed;
     z-index: 1;
@@ -22,7 +22,7 @@
     background-color: var(--MODAL-BG);
 }
 
-.modal {
+.clay-modal {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -34,16 +34,16 @@
     background-color: var(--PURE-WHITE);
 }
 
-.modal-cta-right {
+.clay-modal-cta-right {
     display: flex;
     justify-content: flex-end;
     padding: 4px 7px;
-    margin-top: 0.75rem;
+    margin-top: 12px;
     width: 100%;
 
 }
 
-.modal-cta{
+.clay-modal-cta{
     padding: 4px 7px;
     margin: 7px;
     border-radius: 4px;
