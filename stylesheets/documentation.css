@@ -514,20 +514,44 @@ pre {
     outline: 1px solid black;
 }
 
-.modal{
+.clay-modal{
     outline: 1px solid var(--DEFAULT-GREY);
     background: var(--BTN-DARK-TEXT);
     padding: 2rem;
 }
 
-.modal h1{
+.clay-modal h1{
     color: var(--DARK-GREEN);
 }
 
-.modal-bg-content{
-    background: url("/assets/res-img-round.jfif"); 
-    height: 100%;
+.clay-modal-bg-content{
+  height: 100%;
 }
+
+.clay-modal-cta-one, .clay-modal-cta-two {
+    padding: 4px 7px;
+    margin: 7px;
+    border-radius: 4px;
+    min-width: 4rem;
+}
+
+.clay-modal-bg-content-centre {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--MODAL-BG)
+}
+
+.clay-modal-handler-centre {
+    width: fit-content;
+    margin: auto;
+}
+
 
 /* Sliders */
 .sliders-wrapper{

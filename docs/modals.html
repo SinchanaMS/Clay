@@ -59,9 +59,9 @@
 
                     <br><br>
 
-                    Use the class <code class="class-highlight">modals</code> in the parent container and <code
-                        class="class-highlight">modal-bg-content</code> in the tag that contains the page's content.
-                    Finally, use the class <code class="class-highlight">modal</code> in the modal section.
+                    Use the class <code class="class-highlight">clay-modals</code> in the parent container and <code
+                        class="class-highlight">clay-modal-bg-content</code> in the tag that contains the page's content.
+                    Finally, use the class <code class="class-highlight">clay-modal</code> in the modal section.
                 </div>
             </div>
 
@@ -71,38 +71,41 @@
                 <div class="description wrapper-description">
                     Below is a modal with the CTAs on the right end of the modal.
 
-                    Use the class <code class="class-highlight">modal-cta-right</code> in the parent container of the
-                    CTA buttons and <code class="class-highlight">modal-cta</code> in the CTA buttons.
+                    Use the class <code class="class-highlight">clay-modal-cta-right</code> in the parent container of the
+                    CTA buttons and <code class="class-highlight">clay-modal-cta</code> in the CTA buttons.
                 </div>
 
                 <div class="component-showcase-col modals">
-                    <div class="modal-bg-content"></div>
-                    <div class="modal">
-                        <h1>Order Placed!</h1>
-                        <hr />
-                        <p class="p-lg">Congratulations! Your order has been confirmed.</p>
-                        <p class="p-lg">Please check your email for details.</p>
-                        <div class="modal-cta-right">
-                            <button class="modal-cta icon-light">OK</button>
-                            <button class="modal-cta icon-dark"> Order Summary</button>
+                    <div class="clay-modal-bg-content">
+                        <div class="clay-modal">
+                            <h1>Order Placed!</h1>
+                            <hr />
+                            <p class="p-lg">Congratulations! Your order has been confirmed.</p>
+                            <p class="p-lg">Please check your email for details.</p>
+                            <div class="clay-modal-cta-right">
+                                <button class="clay-modal-cta icon-dark"> OK </button>
+                            </div>
                         </div>
                     </div>
+
+                    <button class="clay-modal-handler btn icon-dark">Open Modal</button>
+
                 </div>
 
                 <br>
                 <pre><code class="code-snippet language-html">
-<div class="modals">
-    <div class="modal-bg-content">
+<div class="clay-modals">
+    <div class="clay-modal-bg-content">
         Page content comes here
     </div>
-    <div class="modal">
+    <div class="clay-modal">
         <h1>Order Placed!</h1>
         <hr/>
         <p>Congratulations! Your order has been confirmed.</p>
         <p>Please check your email for details.</p>
-        <div class="modal-cta-right">
-            <button class="modal-cta">OK</button>
-            <button class="modal-cta">Order Summary</button>
+        <div class="clay-modal-cta-right">
+            <button class="clay-modal-cta">OK</button>
+            <button class="clay-modal-cta">Order Summary</button>
         </div>
     </div>
 </div>
@@ -116,38 +119,40 @@
                 <div class="description wrapper-description">
                     Below is a modal with the CTAs at the centre of the modal.
 
-                    Use the class <code class="class-highlight">modal-cta</code> in the CTA buttons and you are good to
+                    Use the class <code class="class-highlight">clay-modal-cta</code> in the CTA buttons and you are good to
                     go.
                 </div>
 
                 <div class="component-showcase-col modals">
-                    <div class="modal-bg-content"></div>
-                    <div class="modal">
-                        <h1>Order Placed!</h1>
-                        <hr />
-                        <p class="p-lg">Congratulations! Your order has been confirmed.</p>
-                        <p class="p-lg">Please check your email for details.</p>
-                        <div>
-                            <button class="modal-cta icon-light">OK</button>
-                            <button class="modal-cta icon-dark"> Order Summary</button>
+                    <div class="clay-modal-bg-content-centre">
+                        <div class="clay-modal">
+                            <h1>Order Placed!</h1>
+                            <hr />
+                            <p class="p-lg">Congratulations! Your order has been confirmed.</p>
+                            <p class="p-lg">Please check your email for details.</p>
+                            <div>
+                                <button class="clay-modal-cta-one icon-light">OK</button>
+                                <button class="clay-modal-cta-two icon-dark"> Order Summary</button>
+                            </div>
                         </div>
                     </div>
+                    <button class="clay-modal-handler-centre btn icon-dark">Open Modal</button>
                 </div>
                 <br>
 
                 <pre><code class="code-snippet language-html">
-<div class="modals">
-    <div class="modal-bg-content">
+<div class="clay-modals">
+    <div class="clay-modal-bg-content">
         Page content comes here
     </div>
-    <div class="modal">
+    <div class="clay-modal">
         <h1>Order Placed!</h1>
         <hr/>
         <p class="p-lg">Congratulations! Your order has been confirmed.</p>
         <p class="p-lg">Please check your email for details.</p>
         <div>
-            <button class="modal-cta icon-light">OK</button>
-            <button class="modal-cta icon-dark"> Order Summary</button>
+            <button class="clay-modal-cta icon-light">OK</button>
+            <button class="clay-modal-cta icon-dark"> Order Summary</button>
         </div>
     </div>
 </div>
@@ -161,7 +166,6 @@
 
         </section>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
         integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -169,6 +173,7 @@
         hljs.highlightAll();
     </script>
     <script src="/js/codeblock.js"></script>
+    <script src="/js/modals.js"></script>
 </body>
 
 </html>
